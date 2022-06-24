@@ -1,22 +1,22 @@
 {
-  "name": "oh-myfood",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MARYKKKK/ho-myfood.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MARYKKKK/ho-myfood/issues"
-  },
-  "homepage": "https://github.com/MARYKKKK/ho-myfood#readme",
-  "dependencies": {
-    "sass": "^1.52.3"
-  }
+    "name": "oh-myfood",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MARYKKKK/ho-myfood.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MARYKKKK/ho-myfood/issues"
+    },
+    "homepage": "https://github.com/MARYKKKK/ho-myfood#readme",
+    "dependencies": {
+        "sass": "^1.52.3"
+    }
 }
