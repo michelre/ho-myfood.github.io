@@ -88,9 +88,136 @@ body {
   flex-direction: row;
 }
 .header_heading .nav {
-  margin-left: 37%;
+  margin-left: 29%;
   display: flex;
   align-items: center;
+}
+
+.text {
+  font-size: large;
+  color: #333;
+  flex-direction: row;
+  height: 33px;
+  padding: 1px;
+  margin-right: -4px;
+  border: 0px;
+  background-color: hsla(0deg, 25%, 10%, 0.04);
+  box-shadow: rgba(152, 151, 151, 0.186);
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  position: relative;
+  left: -4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form .recherche-emoticon {
+  margin: 0px 15px 0 0;
+}
+.form .fa-solid {
+  font-size: x-large;
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(243, 241, 241, 0.5);
+}
+.nav_container .titre {
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: 900;
+}
+.nav_container .sous-titre {
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.nav_link-search {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.nav_link-search .nav_link-activ-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.nav_link-search .filtre {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.btn li {
+  list-style: none;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 0.5px rgba(195, 72, 232, 0.27);
+  text-align: center;
+  position: relative;
+  margin: 0 10px 0 10px;
+  color: #333;
+  background-color: #9356DC 0.2;
+}
+.btn i {
+  border-radius: 50%;
+  position: relative;
+  right: 2px;
+  background-color: #9356DC 0.3;
+  padding: 8px 10px 12px 9px;
+  color: #9356DC 0.2;
+  width: 19px;
+}
+.btn .familial {
+  margin: 5px 19px 5px 19px;
+  justify-content: center;
+}
+
+.nav_link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containeur {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+.cart img {
+  width: 187px;
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 127px;
+}
+.cart a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
