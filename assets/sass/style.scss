@@ -1,1 +1,93 @@
-@import "/assets/sass/_variable.scss";
+@import "./utils/_variable.scss";
+@import "./base/_base.scss";
+@import "./base/_typography.scss";
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(assets/fonts/Shrikhand-Regular.otf)format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/fonts/Roboto-Black.ttf) format("truetype");
+    src: url(assets/fonts/Roboto-BlackItalic.ttf) format("truetype");
+    src: url(assets/fonts/Roboto-Bold.ttf) format("truetype");
+    src: url(assets/fonts/Roboto-BoldItalic.ttf)format("truetype");
+    src: url(assets/fonts/Roboto-Italic.ttf)format("truetype");
+    src: url(assets/fonts/Roboto-Regular.ttf)format("truetype");
+}
+
+
+
+.container,
+	.container-fluid,
+	.container-xxl,
+	.container-xl,
+	.container-lg,
+	.container-md,
+	.container-sm {
+	    width: 100%;
+	   
+	    margin-right: auto;
+	    margin-left: auto;
+	    transition: all 0.5s ease-out;
+	}
+	
+	/*@media container*/
+	@media (min-width: 576px) {
+	    .container-sm,
+	    .container {
+	        max-width: 540px;
+	    }
+	}
+	
+	@media (min-width: 768px) {
+	    .container-md,
+	    .container-sm,
+	    .container {
+	        max-width: 720px;
+	    }
+	}
+	
+	@media (min-width: 992px) {
+	    .container-lg,
+	    .container-md,
+	    .container-sm,
+	    .container {
+	        max-width: 960px;
+	    }
+	}
+	
+	@media (min-width: 1200px) {
+	    .container-xl,
+	    .container-lg,
+	    .container-md,
+	    .container-sm,
+	    .container {
+	        max-width: 1140px;
+	    }
+	}
+	
+	@media (min-width: 1400px) {
+	    .container-xxl,
+	    .container-xl,
+	    .container-lg,
+	    .container-md,
+	    .container-sm,
+	    .container {
+	        max-width: 1320px;
+	    }
+	}
+    .header_heading{
+        display: flex;
+        flex-direction: row;
+
+		.nav{
+			margin-left: 37%;
+    		display: flex;
+   			 align-items: center
+
+		}
+
+    }
