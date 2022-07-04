@@ -24,34 +24,40 @@
                     </div>
                     <!---localisation--->
                         <div class="nav">
-                            <form class="form form-search">
-                                <label for="emoticon" class="recherche"><i class="fa-solid fa-location-pin" /></i>
+                            <form class="form form-search" method="post" action="/">
+                                <label class="recherche-emoticon"><i class="fa-solid fa-location-pin" /></i>
                                 </label>
                                 <input type="text" placeholder="Paris,Belleville" class="text"/>
                                  </form>
                                  </div>
                     </div>
+
+                    
                                  <!---bouton-explore-->
                                   <div class="nav_container">
-                                <p>reservé le menu<br> qui vous convient</p>
-                                <p>Découvré des restaurants d'exception,<br>selectionnés par nos soins</p>
+                                <p class="titre">reservé le menu,
+                                    qui vous convient</p>
+                                <p class="sous-titre">Découvré des restaurants d'exception,
+                                    selectionnés par nos soins</p>
                                 <div class="nav_link">
                                     <button type="button">Explorer nos restaurants</button>
                                 <!---nav-restaurant-->
                                 <div class="nav_link-search">
-                                    <h2>Fontionnement</h2>
+                                    <span class="filtre">Fontionnement</span>
                                     <div class="nav_link-activ-button">
                                         <ul class="btn">
-                                            <li>
-                                                <a href="#"><i class="fa-solid fa-mobile-screen"></i></a><span>Choisissez un restaurant</span>
-                                                <div class="familial"></div>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa-solid fa-align-justify"></i></a><span>Composez votre menu</span>
+                                            <li class="active">
+                                                
+                                                <a href="#"><i class="fa-solid fa-mobile-screen"></i></a><span class="familial">Choisissez un restaurant</span>
                                                 <div class="familial"></div>
                                             </li>
                                             <li class="active">
-                                                <a href="#"><i class="fa-solid fa-store"></i></a><span>Dégustez au restaurant</span>
+                                                
+                                                <a href="#"><i class="fa-solid fa-align-justify"></i></a><span class="familial">Composez votre menu</span>
+                                                <div class="familial"></div>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#"><i class="fa-solid fa-store"></i></a><span class="familial">Dégustez au restaurant</span>
                                                 <div class="familial"></div>
                                             </li>
                                         </ul>
