@@ -208,67 +208,99 @@
 		display: flex;
 		flex-direction: row;
 		margin-top: 20px;
+		background-color: rgba(243, 241, 241, 0.5);
 	}
-	.carts{
-		display: flex;
-		flex-direction: column-reverse;
-		margin-bottom: 20px;
-    border-radius: 26px;
-    background-color: #ffff;
-    box-shadow: 5px 3px 3px rgb(199 198 198);
-    padding: -37px;
-    width: 257px;
-    height: 268px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: inherit;
-    background-position: center center;
-}
-		
-		img{
-	width: 187px;
-    background-size: 100%;
-    border-radius: 20px 20px 0 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden;
-    height: 127px;
 	
-		}
-		a{
-			text-decoration: none;
-		}
 		
+	
 	
 
 	.cart{
 		display: flex;
 		flex-direction: column-reverse;
-		margin-bottom: 20px;
+		margin: 10px 10px 10px 38px;
     border-radius: 26px;
-    background-color: #ffff;
+    background-color:#ffff;
     box-shadow: 5px 3px 3px rgb(199 198 198);
     padding: -37px;
-    width: 257px;
-    height: 268px;
+    width: 280px;
+    height: 220px;
     overflow: hidden;
     background-size: cover;
     background-repeat: inherit;
     background-position: center center;
 }
 		
-		img{
-	width: 187px;
+		.image{
+	width: 300px;
     background-size: 100%;
     border-radius: 20px 20px 0 0;
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
-    height: 127px;
+    height: 132px;
 	
 		}
 		a{
 			text-decoration: none;
+		}
+		.flex{
+			display: flex;
+			flex-direction: row;
+			margin: 10px;
+		}
+		.footer{
+			width: 100%;
+			background-color: #333;
+			a{
+				text-decoration: none;
+				color: #ffff;
+				
+			}
+			.faq{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				margin: 5px 5px 5px 5px;
+
+			}
+			li{
+				margin: 10px 15px 15px 15px;
+				font-size: 16px;
+			}
+			i{
+				color: #ffff;
+			}
+
+		}
+
+
+		.header{
+
+		}
+		.logo{
+			font-weight: 400;
+
+		}
+			.nav_btn{
+
+			}
+		.bck-img{
+			width: 1600px;
+			background-repeat: no-repeat;
+			background-position: right 35% bottom 45%;
+    overflow: hidden;
+    height: 150px;
+		}
+		.menu{
+			background-color:rgba(243, 241, 241, 0.5) ;
+		}
+		.item-menu{
+			background-color:#ffff;
+			box-shadow: rgba(51, 51, 51, 0.235);
+			border-radius: 10px 10px 10px 10px;
+			width: 800px;
+			height: 100px;
 		}
 
 	
