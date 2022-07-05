@@ -201,23 +201,89 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  background-color: rgba(243, 241, 241, 0.5);
 }
 
 .cart {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  margin: 10px 10px 10px 38px;
+  border-radius: 26px;
+  background-color: white;
+  box-shadow: 5px 3px 3px rgb(199, 198, 198);
+  padding: -37px;
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: inherit;
+  background-position: center center;
 }
-.cart img {
-  width: 187px;
+
+.image {
+  width: 300px;
   background-size: 100%;
   border-radius: 20px 20px 0 0;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
-  height: 127px;
+  height: 132px;
 }
-.cart a {
+
+a {
   text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer .faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 5px 5px 5px;
+}
+.footer li {
+  margin: 10px 15px 15px 15px;
+  font-size: 16px;
+}
+.footer i {
+  color: white;
+}
+
+.logo {
+  font-weight: 400;
+}
+
+.bck-img {
+  width: 1600px;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  overflow: hidden;
+  height: 150px;
+}
+
+.menu {
+  background-color: rgba(243, 241, 241, 0.5);
+}
+
+.item-menu {
+  background-color: white;
+  box-shadow: rgba(51, 51, 51, 0.235);
+  border-radius: 10px 10px 10px 10px;
+  width: 800px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
