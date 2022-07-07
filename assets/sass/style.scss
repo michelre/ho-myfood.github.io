@@ -1,9 +1,18 @@
-@import "./utils/_variable.scss";
-@import "./utils/_mixins.scss";
-@import "./utils/_placeholders.scss";
-@import "./base/_base.scss";
-@import "./base/_typography.scss";
-@import "./libs/_responsive.scss";
+@import "./utils/_variable";
+@import "./utils/_mixins";
+@import "./utils/_placeholders";
+
+@import "./base/_base";
+@import "./base/_typography";
+
+@import "./layout/_header";
+
+
+@import "./pages/cart";
+@import "./pages/container";
+
+
+@import "./libs/_responsive";
 
 @font-face {
     font-family: Shrikhand;
@@ -59,6 +68,7 @@
 	    .container-sm,
 	    .container {
 	        max-width: 960px;
+			margin: 0;
 	    }
 	}
 	
@@ -93,7 +103,16 @@
    			 align-items: center
 
 		}
-		
+		.img-logo{
+			width: 300px;
+			background-size: 100%;
+			
+			background-repeat: no-repeat;
+			background-position: center center;
+			overflow: hidden;
+			height: 132px;
+			
+		}
 
     }
 	.text {
@@ -115,6 +134,7 @@
 	
 
 }
+
 	.form{
 	display: flex;
     flex-direction: row;
@@ -168,9 +188,36 @@
     		font-weight: bold;
 		}
 		
+		.image{
+			width: 300px;
+			background-size: 100%;
+			border-radius: 20px 20px 0 0;
+			background-repeat: no-repeat;
+			background-position: center center;
+			overflow: hidden;
+			height: 132px;
+			
+				}
+				a{
+					text-decoration: none;
+				}
+		
+				.bck-img{
+					width: 200vh;
+					background-repeat: no-repeat;
+					background-position: right 35% bottom 45%;
+					background-size: cover;
+			overflow: hidden;
+			height: 170px;
+				}
+	}
+	.tchek{
+		display: flex;
+		align-items: center;
 	}
 	.button{
 		padding: 10px;
+		margin-top: 10px;
 		text-align: center;
 		cursor: pointer;
 		transition: 0.5s;
@@ -178,18 +225,18 @@
 		border-radius: 10px;
 		border: none;
 		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		background: $btn-degrade;
+			&:hover{
+				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+				opacity: 1;
+				
+				}
+				.btn1{
+					display: flex;
+					align-items: center;
+				}
 	}
-	.btn1{
-		background: linear-gradient(
-			to bottom right, #FF79DA,
-			#9356DC
-		);
-		
-	}
-	.btn1:hover{
-		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-		background: lighten;
-		}
+	
 	
 	.btn{
 		display: flex;
@@ -270,6 +317,29 @@
 		a{
 			text-decoration: none;
 		}
+		.menu{
+			background-color: rgba(243, 241, 241, 0.5);
+    display: flex;
+    margin: 40px 10px 10px 10px;
+    /* top: 50%; */
+    /* left: 50%; */
+    flex-direction: column;
+    align-items: center,
+		}
+		.item-menu{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color:#ffff;
+			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 10px 10px 10px 10px;
+			width: 600px;
+			height: 100px;
+
+			.contenu{
+				text-align: center;
+			}
+		}
 		.flex{
 			display: flex;
 			flex-direction: row;
@@ -301,23 +371,7 @@
 		}
 
 		
-		.bck-img{
-			width: 100vh;
-			background-repeat: no-repeat;
-			background-position: right 35% bottom 45%;
-			background-size: cover;
-    overflow: hidden;
-    height: 150px;
-		}
-		.menu{
-			background-color:rgba(243, 241, 241, 0.5) ;
-		}
-		.item-menu{
-			background-color:#ffff;
-			box-shadow: rgba(51, 51, 51, 0.235);
-			border-radius: 10px 10px 10px 10px;
-			width: 800px;
-			height: 100px;
-		}
+		
+		
 
 	

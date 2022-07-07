@@ -15,6 +15,54 @@ body {
   color: #333;
 }
 
+.img-logo {
+  width: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 70px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 10px 10px 10px 38px;
+  border-radius: 26px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: -37px;
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: inherit;
+  background-position: center center;
+}
+
+.image {
+  width: 300px;
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bck-img {
+  width: 200vh;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  overflow: hidden;
+  height: 170px;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(assets/fonts/Shrikhand-Regular.otf) format("opentype");
@@ -62,6 +110,7 @@ body {
 .container-sm,
 .container {
     max-width: 960px;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -91,6 +140,14 @@ body {
   margin-left: 29%;
   display: flex;
   align-items: center;
+}
+.header_heading .img-logo {
+  width: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
 }
 
 .text {
@@ -158,9 +215,35 @@ body {
   font-size: larger;
   font-weight: bold;
 }
+.nav_link-search .image {
+  width: 300px;
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
+}
+.nav_link-search a {
+  text-decoration: none;
+}
+.nav_link-search .bck-img {
+  width: 200vh;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  overflow: hidden;
+  height: 170px;
+}
+
+.tchek {
+  display: flex;
+  align-items: center;
+}
 
 .button {
   padding: 10px;
+  margin-top: 10px;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -168,15 +251,15 @@ body {
   border-radius: 10px;
   border: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.btn1 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
-
-.btn1:hover {
+.button:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  background: lighten;
+  opacity: 1;
+}
+.button .btn1 {
+  display: flex;
+  align-items: center;
 }
 
 .btn {
@@ -254,6 +337,30 @@ a {
   text-decoration: none;
 }
 
+.menu {
+  background-color: rgba(243, 241, 241, 0.5);
+  display: flex;
+  margin: 40px 10px 10px 10px;
+  /* top: 50%; */
+  /* left: 50%; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  width: 600px;
+  height: 100px;
+}
+.item-menu .contenu {
+  text-align: center;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -280,27 +387,6 @@ a {
 }
 .footer i {
   color: white;
-}
-
-.bck-img {
-  width: 100vh;
-  background-repeat: no-repeat;
-  background-position: right 35% bottom 45%;
-  background-size: cover;
-  overflow: hidden;
-  height: 150px;
-}
-
-.menu {
-  background-color: rgba(243, 241, 241, 0.5);
-}
-
-.item-menu {
-  background-color: white;
-  box-shadow: rgba(51, 51, 51, 0.235);
-  border-radius: 10px 10px 10px 10px;
-  width: 800px;
-  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
