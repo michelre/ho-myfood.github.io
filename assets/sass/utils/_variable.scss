@@ -8,7 +8,9 @@ $tertiaire-vert:#99E2D0;
 
 
 //boutton
-
+$btn-degrade:linear-gradient(
+    to bottom right, $secondaire-rose,$primaire-mauve,
+);
 
 
 
@@ -18,13 +20,13 @@ $tertiaire-vert:#99E2D0;
 
 //textes
 $corlor-typo: #333;
+$color-btn:#ffff
 
 
 
 
 //utilitaire/position/dimension
-$btn-radius: 5px;
-$padding-text: 16px;
+
 
 
 
