@@ -21,6 +21,60 @@ body {
   color: #333;
 }
 
+.img-logo {
+  width: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 70px;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: 10px 10px 10px 38px;
+  border-radius: 26px;
+  background-color: #ffff;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: -37px;
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: inherit;
+  background-position: center center;
+}
+
+.image {
+  width: 300px;
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bck-img {
+  width: 200vh;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  overflow: hidden;
+  height: 170px;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(assets/fonts/Shrikhand-Regular.otf) format("opentype");
@@ -73,6 +127,7 @@ body {
   .container-sm,
   .container {
     max-width: 960px;
+    margin: 0;
   }
 }
 
@@ -115,6 +170,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header_heading .img-logo {
+  width: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
 }
 
 .text {
@@ -229,6 +293,69 @@ body {
   font-weight: bold;
 }
 
+.nav_link-search .image {
+  width: 300px;
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 132px;
+}
+
+.nav_link-search a {
+  text-decoration: none;
+}
+
+.nav_link-search .bck-img {
+  width: 200vh;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  overflow: hidden;
+  height: 170px;
+}
+
+.tchek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.button:hover {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.button .btn1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +424,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 20px;
+  background-color: rgba(243, 241, 241, 0.5);
 }
 
 .cart {
@@ -304,22 +432,117 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: 10px 10px 10px 38px;
+  border-radius: 26px;
+  background-color: #ffff;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: -37px;
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: inherit;
+  background-position: center center;
 }
 
-.cart img {
-  width: 187px;
+.image {
+  width: 300px;
   background-size: 100%;
   border-radius: 20px 20px 0 0;
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
-  height: 127px;
+  height: 132px;
 }
 
-.cart a {
+a {
   text-decoration: none;
+}
+
+.menu {
+  background-color: rgba(243, 241, 241, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 10px 10px 10px;
+  /* top: 50%; */
+  /* left: 50%; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffff;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  width: 600px;
+  height: 100px;
+}
+
+.item-menu .contenu {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.footer .faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5px 5px 5px 5px;
+}
+
+.footer li {
+  margin: 10px 15px 15px 15px;
+  font-size: 16px;
+}
+
+.footer i {
+  color: #ffff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -67,8 +67,8 @@
 	    .container-md,
 	    .container-sm,
 	    .container {
-	        max-width: 960px;
-			margin: 0;
+	        max-width: 1200px;
+			
 	    }
 	}
 	
@@ -95,6 +95,7 @@
     .header_heading{
         display: flex;
         flex-direction: row;
+		justify-content: space-between;
 		
 
 		.nav{
@@ -156,6 +157,7 @@
 		flex-direction: column;
 		align-items: center;
 		background-color: rgba(243, 241, 241, 0.500);
+		height: 268px;
 		.titre{
 			display: flex;
 			justify-content: space-around;
@@ -174,6 +176,7 @@
 		display: flex;
 		flex-direction: row;
 		margin-top: 10px;
+		justify-content: space-between;
 		.nav_link-activ-button{
 			display: flex;
 			flex-direction: row;
@@ -184,7 +187,8 @@
 			margin-right: 10px;
 			display: flex;
 			align-items: center;
-			font-size: larger;
+			font-size: 20px;
+			text-transform: capitalize;
     		font-weight: bold;
 		}
 		
@@ -211,31 +215,6 @@
 			height: 170px;
 				}
 	}
-	.tchek{
-		display: flex;
-		align-items: center;
-	}
-	.button{
-		padding: 10px;
-		margin-top: 10px;
-		text-align: center;
-		cursor: pointer;
-		transition: 0.5s;
-		color:white;
-		border-radius: 10px;
-		border: none;
-		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-		background: $btn-degrade;
-			&:hover{
-				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-				opacity: 1;
-				
-				}
-				.btn1{
-					display: flex;
-					align-items: center;
-				}
-	}
 	
 	
 	.btn{
@@ -247,13 +226,13 @@
 		li{
 			list-style: none;
 			margin: 10px;
-			border-radius: 20px;
-    border: solid 0.5px rgba(195, 72, 232, 0.27);
+			border-radius: 16px;
+			box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 0 10px 0 10px;
+    margin: 0 127px 0 45px;
     color: #333;
-	background-color: $primaire-mauve(0.2);
+	background-color: rgba(243, 241, 241, 0.500);
 		}
 		i{
 			border-radius: 50%;
@@ -282,12 +261,30 @@
 		flex-direction: row;
 		margin-top: 20px;
 		background-color: rgba(243, 241, 241, 0.5);
+		height: 585px;
+		
 	}
 	
 		
-	
-	
+		.titre{
+			display: flex;
+			align-items: center;
+			margin: 50px;
+			font-size: 20px;
+			font-style: normal;
+			text-transform: lowercase;
+		
+		}
 
+		.flag{
+			position: relative;
+			background-color: $tertiaire-vert;
+			width: 30px;
+			height: 40px;
+		}
+		
+		
+	
 	.cart{
 		display: flex;
 		flex-direction: column-reverse;
@@ -317,33 +314,13 @@
 		a{
 			text-decoration: none;
 		}
-		.menu{
-			background-color: rgba(243, 241, 241, 0.5);
-    display: flex;
-    margin: 40px 10px 10px 10px;
-    /* top: 50%; */
-    /* left: 50%; */
-    flex-direction: column;
-    align-items: center,
-		}
-		.item-menu{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color:#ffff;
-			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-			border-radius: 10px 10px 10px 10px;
-			width: 600px;
-			height: 100px;
 
-			.contenu{
-				text-align: center;
-			}
-		}
+
 		.flex{
 			display: flex;
 			flex-direction: row;
-			margin: 10px;
+			margin: 22px;
+			align-items: center;
 		}
 		.footer{
 			width: 100%;
@@ -369,6 +346,123 @@
 			}
 
 		}
+
+
+		/*menu a la francaise*/
+		.menu{
+			background-color: rgba(243, 241, 241, 0.5);
+    display: flex;
+    margin: 40px 10px 10px 10px;
+    /* top: 50%; */
+    /* left: 50%; */
+    flex-direction: column;
+    align-items: center;
+	opacity: 0;
+	transform: translatey(-30px);
+	animation: apparition 0.9s 0.8s ease-out forwards;
+		}
+		.item-menu{
+			
+			background-color:#ffff;
+			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 10px 10px 10px 10px;
+			width: 600px;
+			height: 100px;
+
+			.contenu{
+				display: flex;
+   				 align-items: flex-end;
+    			justify-content: space-evenly;
+			}
+		}
+
+
+		
+
+
+
+
+
+		/*---menu la francaise fleche retour menu*/
+	.class-fa{
+		padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color:black;
+	background-color: white;
+    border-radius: 10px;
+    border: none;
+	}
+	/*--fleche m-a-la-francaise*/
+
+	.nav_btn{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: -10px;
+	}
+	/*---logo*/
+	.logo{
+	display: flex;
+	justify-content: center;
+    margin-top: -35px;
+	}
+	/*---h1 menu a la francaise*/
+	.heading{
+		display: flex;
+		align-items: center;
+        justify-content: center;
+
+	}	
+	.contenu{
+		display: flex;
+			
+
+	}
+	.price{
+		display: flex;
+	}
+	.check.hidden{
+		display: flex;
+	}
+	/*animation carte */
+	@keyframes apparition{
+		100%{
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+
+	/*bouton commander*/
+	.tchek{
+		display: flex;
+		justify-content: center;
+	}
+	.button{
+		padding: 10px;
+		margin-top: 10px;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.5s;
+		color:white;
+		border-radius: 10px;
+		border: none;
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		background: $btn-degrade;
+			&:hover{
+				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+				opacity: 1;
+				
+				}
+				.btn1{
+					display: flex;
+					align-items: center;
+				}
+	}
+		
 
 		
 		
