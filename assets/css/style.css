@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-size: 12px;
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+  color: #333;
 }
 
 body {
@@ -178,6 +184,9 @@ a {
 .form .fa-solid {
   font-size: x-large;
 }
+.form .fa-solid :hover {
+  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
 
 .nav_container {
   display: flex;
@@ -189,14 +198,13 @@ a {
 .nav_container .titre {
   display: flex;
   justify-content: space-around;
-  font-size: larger;
+  font-size: x-large;
   font-weight: 900;
 }
 .nav_container .sous-titre {
   display: flex;
   justify-content: space-around;
   font-size: larger;
-  font-weight: 900;
 }
 
 .nav_link-search {
@@ -227,11 +235,24 @@ a {
   overflow: hidden;
   height: 132px;
 }
-.nav_link-search a {
-  text-decoration: none;
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
 }
-.nav_link-search .bck-img {
-  width: 200vh;
+
+.h2 {
+  font-size: large;
+}
+
+.fa-regular :hover {
+  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.bck-img {
+  width: 126vh;
   background-repeat: no-repeat;
   background-position: right 35% bottom 45%;
   background-size: cover;
@@ -246,28 +267,39 @@ a {
   margin: 10px;
 }
 .btn li {
-  list-style: none;
   margin: 10px;
   border-radius: 16px;
   box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
   margin: 0 127px 0 45px;
-  color: #333;
   background-color: rgba(243, 241, 241, 0.5);
 }
 .btn i {
   border-radius: 50%;
   position: relative;
   right: 2px;
-  background-color: #9356DC 0.3;
   padding: 8px 10px 12px 9px;
-  color: #9356DC 0.2;
   width: 19px;
 }
 .btn .familial {
   margin: 5px 19px 5px 19px;
   justify-content: center;
+}
+
+li.active:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+  transform: scale(1.15);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+
+.font .fa-solid {
+  color: transparent;
+  border: 4px solid black;
+}
+.font .fa-solid:hover {
+  color: #333;
 }
 
 .nav_link {
@@ -285,32 +317,24 @@ a {
   height: 585px;
 }
 
-.titre {
+.fonction {
   display: flex;
   align-items: center;
   margin: 50px;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   text-transform: lowercase;
 }
 
-.flag {
-  position: relative;
-  background-color: #99E2D0;
-  width: 30px;
-  height: 40px;
-}
-
 .cart {
   display: flex;
-  flex-direction: column-reverse;
-  margin: 10px 10px 10px 38px;
+  flex-direction: column;
+  margin: -13px 10px 4px 58px;
   border-radius: 26px;
   background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: -37px;
-  width: 280px;
-  height: 220px;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
+  width: 298px;
+  height: 222px;
   overflow: hidden;
   background-size: cover;
   background-repeat: inherit;
@@ -325,10 +349,6 @@ a {
   background-position: center center;
   overflow: hidden;
   height: 132px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .flex {
@@ -364,9 +384,7 @@ a {
 .menu {
   background-color: rgba(243, 241, 241, 0.5);
   display: flex;
-  margin: 40px 10px 10px 10px;
-  /* top: 50%; */
-  /* left: 50%; */
+  margin: -17px 18px 43px 24px;
   flex-direction: column;
   align-items: center;
   opacity: 0;
@@ -380,11 +398,20 @@ a {
   border-radius: 10px 10px 10px 10px;
   width: 600px;
   height: 100px;
+  margin-block: 10px;
 }
 .item-menu .contenu {
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
+}
+
+.section {
+  display: flex;
+  border-bottom: #99E2D0 1px solid;
+  padding: 40px 23px 20px 16px;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*---menu la francaise fleche retour menu*/
@@ -424,14 +451,32 @@ a {
 
 .contenu {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
 }
 
 .price {
   display: flex;
 }
 
-.check.hidden {
+.check-hidden {
   display: flex;
+  margin: 10px;
+}
+
+.check-hidden:hover {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 60px;
+}
+
+.i.fa-regular.fa-circle-check {
+  transition: transform 0.5s;
+  transform: scale(1) rotate(90deg);
 }
 
 /*animation carte */
@@ -460,8 +505,12 @@ a {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .button:hover {
+  position: absolute;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
   opacity: 1;
+  background-color: darken 5;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .button .btn1 {
   display: flex;

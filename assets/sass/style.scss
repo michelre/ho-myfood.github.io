@@ -148,6 +148,9 @@
 	}
 	.fa-solid {
 		font-size:x-large;
+		:hover{
+			background-color: $btn-degrade;
+		}
 	}
 	
 	}
@@ -161,14 +164,14 @@
 		.titre{
 			display: flex;
 			justify-content: space-around;
-			font-size: larger;
+			font-size: x-large;
 			font-weight: 900;
 		}
 		.sous-titre{
 			display: flex;
 			justify-content: space-around;
 			font-size: larger;
-			font-weight: 900;
+			
 		}
 		
 	}
@@ -202,20 +205,31 @@
 			height: 132px;
 			
 				}
-				a{
-					text-decoration: none;
-				}
+				
 		
-				.bck-img{
-					width: 200vh;
-					background-repeat: no-repeat;
-					background-position: right 35% bottom 45%;
-					background-size: cover;
-			overflow: hidden;
-			height: 170px;
 				}
+	h2{
+	display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+	
+	}
+	.h2{
+		font-size: large;
 	}
 	
+	.fa-regular :hover{
+		background-color: $btn-degrade;
+	}
+	.bck-img{
+		width: 126vh;
+background-repeat: no-repeat;
+background-position: right 35% bottom 45%;
+background-size: cover;
+overflow: hidden;
+height: 170px;
+	}
 	
 	.btn{
 		display: flex;
@@ -224,23 +238,23 @@
 		margin: 10px ;
 		
 		li{
-			list-style: none;
+			
 			margin: 10px;
 			border-radius: 16px;
 			box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
     margin: 0 127px 0 45px;
-    color: #333;
+    
 	background-color: rgba(243, 241, 241, 0.500);
 		}
 		i{
 			border-radius: 50%;
     position: relative;
     right: 2px;
-    background-color:$primaire-mauve(0.3);
+    
     padding: 8px 10px 12px 9px;
-    color:$primaire-mauve(0.2) ;
+    
     width: 19px;
 		}
 		.familial{
@@ -250,6 +264,24 @@
 		}
 		
 	}
+	li.active:hover{
+		background-color:rgba( $primaire-mauve, 0.2);
+		transform: scale(1.15);
+		transition-property: transform;
+		transition-duration: 1000ms;
+	}
+	.font .fa-solid{
+		color:transparent;
+		border: 4px solid black;
+		&:hover{
+			color: #333;
+		}
+		
+		}
+	
+	
+
+	
 	.nav_link{
 	display: flex;
     justify-content: center;
@@ -265,36 +297,29 @@
 		
 	}
 	
-		
-		.titre{
+		.fonction{
 			display: flex;
 			align-items: center;
 			margin: 50px;
-			font-size: 20px;
+			font-size: 30px;
 			font-style: normal;
-			text-transform: lowercase;
-		
+			text-transform:lowercase; 
+
 		}
 
-		.flag{
-			position: relative;
-			background-color: $tertiaire-vert;
-			width: 30px;
-			height: 40px;
-		}
+		
 		
 		
 	
 	.cart{
 		display: flex;
-		flex-direction: column-reverse;
-		margin: 10px 10px 10px 38px;
+    flex-direction: column;
+    margin: -13px 10px 4px 58px;
     border-radius: 26px;
-    background-color:#ffff;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: -37px;
-    width: 280px;
-    height: 220px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1) ;
+    width: 298px;
+    height: 222px;
     overflow: hidden;
     background-size: cover;
     background-repeat: inherit;
@@ -311,11 +336,7 @@
     height: 132px;
 	
 		}
-		a{
-			text-decoration: none;
-		}
-
-
+		
 		.flex{
 			display: flex;
 			flex-direction: row;
@@ -350,11 +371,10 @@
 
 		/*menu a la francaise*/
 		.menu{
-			background-color: rgba(243, 241, 241, 0.5);
+	background-color: rgba(243, 241, 241, 0.5);
     display: flex;
-    margin: 40px 10px 10px 10px;
-    /* top: 50%; */
-    /* left: 50%; */
+    margin: -17px 18px 43px 24px;
+    
     flex-direction: column;
     align-items: center;
 	opacity: 0;
@@ -368,12 +388,20 @@
 			border-radius: 10px 10px 10px 10px;
 			width: 600px;
 			height: 100px;
+			margin-block: 10px;
 
 			.contenu{
 				display: flex;
    				 align-items: flex-end;
     			justify-content: space-evenly;
 			}
+		}
+		.section{
+			display: flex;
+    border-bottom: $tertiaire-vert 1px solid;
+	padding: 40px 23px 20px 16px;
+    flex-direction: column;
+    align-items: center;
 		}
 
 
@@ -418,15 +446,42 @@
 	}	
 	.contenu{
 		display: flex;
+        align-items: center;
+        justify-content: space-around;
+	    cursor: pointer;
+
+	 
+
 			
 
 	}
 	.price{
 		display: flex;
+		
 	}
-	.check.hidden{
+	.check-hidden{
 		display: flex;
+		margin: 10px;
 	}
+
+	.check-hidden:hover{
+		color: white;
+		cursor: pointer;
+		display: flex;
+		
+        background-color: $tertiaire-vert;
+	    width: 70px;
+	    height: 60px;
+		
+	 
+	}
+	.i.fa-regular.fa-circle-check{
+		transition: transform .5s;
+		transform: scale(1)rotate(90deg);
+
+	}
+	
+	
 	/*animation carte */
 	@keyframes apparition{
 		100%{
@@ -452,9 +507,18 @@
 		border: none;
 		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 		background: $btn-degrade;
+		
 			&:hover{
+				position:absolute;
+			
 				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 				opacity: 1;
+				background-color: darken (5);
+				
+				z-index: -1;
+				transition: opacity 250ms;
+               
+                
 				
 				}
 				.btn1{
