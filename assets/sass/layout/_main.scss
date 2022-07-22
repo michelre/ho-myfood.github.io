@@ -1,0 +1,54 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    margin: 22px;
+    align-items: center;
+}
+
+.containeur{
+    display: flex;
+margin-top: 1px;
+background-color: rgba(243, 241, 241, 0.5);
+height: 550px;
+
+align-items: center;
+/*align-content: center;*/
+flex-direction: column;
+
+    
+}
+
+.fonction{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    font-size: 30px;
+    }
+
+    h2{
+        margin: 26px 9px 8px -2px;
+    
+    }
+    .content{
+        display: flex;
+    flex-direction: column;
+    margin: -10px 12px 11px 25px;
+}
+    
+    
+    .h2{
+        display: flex;
+        font-size: large;
+    }
+    
+    .fa-regular :hover{
+        background-color: $btn-degrade;
+    }
+    .bck-img{
+        width: 126vh;
+background-repeat: no-repeat;
+background-position: right 35% bottom 45%;
+background-size: cover;
+overflow: hidden;
+height: 170px;
+    }
