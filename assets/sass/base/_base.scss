@@ -12,3 +12,13 @@ li{
     list-style: none;
     color: #333;
 }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-regular','arial';
+    display: flex;
+    flex-direction: column;
+    color: $corlor-typo;
+}
