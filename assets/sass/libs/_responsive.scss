@@ -59,3 +59,193 @@ $medium-up: "only screen and (min-widht :768px)";
 	    margin-left: auto;
 	    transition: all 0.5s ease-out;
 	}
+
+    @media (max-width: 1400px){
+       .cart{
+        margin:-25px 10px -4px 16px;
+        width: 270px;
+       } 
+       .h2{
+        font-size: smaller;
+       }
+
+      
+
+    }
+    @media (max-width: 1300px){
+        .cart{
+            
+            margin: -25px 10px 40px 3px;
+            width: 299px;
+        }
+        .flex{
+            flex-direction: column;
+        }
+        .containeur{
+            height: 1108px;
+            width: 984px;
+        }
+        .btn{
+            flex-direction: row;
+        }
+        .nav_link-search {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_link-search .filtre{
+            text-transform:none;
+            margin-top: 5px;
+        }
+        .btn li{
+            margin: 25px 66px 32px 38px;
+        }
+    }
+    @media (max-width: 1200px){
+        .cart{
+            margin: 16px 1px 9px 21px;
+             width: 298px
+        }
+        .containeur{
+            
+            height: 1108px;
+            margin: 42px 184px;
+            width: 888px;
+            border-radius: 35px 35px 35px 35px;
+        }
+        .nav_link-search {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin: -6px -22px -10px 70px;
+        }
+        .nav_container{
+            margin: 42px 154px;
+             width: 888px;
+        }
+        .header_heading{
+            width: 864px;
+            margin: 11px 186px;
+        }
+        .flex{
+            margin: 10px 10px 10px 10px;
+        }
+        .btn{
+           
+        }
+        .btn li{
+            margin: 25px 66px 32px -5px;
+        }
+        .footer{
+            width:  888px;
+            margin: 19px 187px;
+        }
+
+
+
+    }
+    @media (max-width: 992px){
+        .nav_link-search {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex{
+            
+            flex-direction: column;
+        }
+        .btn{
+           
+            flex-direction: column;
+        }
+        .btn li{
+            margin: 9px 39px 24px -3px;
+
+        }
+        .cart{
+            margin: 22px 4px 13px 11px;
+        }
+        .containeur{
+            height: 1148px;
+            width: 692px;
+            margin: 13px 180px;
+            border-radius: 0px 0px 0px 0px;
+        }
+        .nav_container{
+            width: 692px;
+            margin: 42px 184px;
+        }
+        .header_heading {
+            width: 693px;
+             margin: 19px 186px;
+        }
+        .footer{
+            width: 691px;
+            margin: 19px 187px;
+        }
+        .img-logo{
+            height: 72px;
+            margin-left: 5px;
+        }
+    }
+
+    
+
+    @media all and (max-width: 768px){
+        .header_heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header_heading .nav{
+            margin-left: 0%;
+            background-color:  hsla(0, 25%, 10%, 0.040);
+            width: 768px;
+            height: 80px;
+        }
+        .text {
+            background-color:  hsla(0, 25%, 10%, 0.040);
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            flex-direction: column;
+        }
+
+    }
+    @media all and (max-width: 500px){
+        .nav_link-search {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header_heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header_heading .nav{
+            background-color:  hsla(0, 25%, 10%, 0.040);
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            flex-direction: column;
+        }
+
+    }
+
+    @media all and (max-width:375px){
+
+    }
