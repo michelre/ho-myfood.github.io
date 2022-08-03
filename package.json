@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts":{
-        "sass": "sass --watch ./assets/sass/style.scss assets/css/style.css"
+        "sass": "sass --watch ./assets/sass/style.scss ./assets/css/style.css"
+
 
 
     },

@@ -1,45 +1,7 @@
-.cart{
-    display: flex;
-flex-direction: column;
-margin: -13px 10px 4px 58px;
-border-radius: 26px;
-background-color: white;
-box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1) ;
-width: 300px;
-height: 215px;
-overflow: hidden;
-background-size: cover;
-background-repeat: inherit;
-background-position: center center;
-}
 
 
-.image{
-	width: 300px;
-    background-size: 100%;
-    border-radius: 20px 20px 0 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden;
-    height: 132px;
-	
-		}
-		a{
-			text-decoration: none;
-		}
 
-        .bck-img{
-			width: 124vh;
-			background-repeat: no-repeat;
-			background-position: right 35% bottom 45%;
-			background-size: cover;
-    overflow: hidden;
-    height: 170px;
-    margin: 16px 0px 14px 34px;
-		}
-
-
-        /*menu a la francaise*/
+        /*menu a la francaise....la palette...les delices...*/
 		.menu{
             background-color: rgba(243, 241, 241, 0.5);
             display: flex;
@@ -50,29 +12,59 @@ background-position: center center;
             opacity: 0;
             transform: translatey(-30px);
             animation: apparition 0.9s 1.5s ease-out forwards;
+            
                 }
                 .item-menu{
-                    
+                    display: inline-block;
                     background-color:#ffff;
                     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
                     border-radius: 10px 10px 10px 10px;
-                    width: 600px;
-                    height: 100px;
+                    width: 700px;
+                    height: 90px;
                     margin-block: 10px;
+                    transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
+                    transition-duration: .5s; 
+                    position: relative;
+                    overflow: hidden;
+                
+                
+                }
                     
-                    .check-hidden{
+                    .item-menu:hover{
+                       
+                        
+                        transition: right 2s;
+
+                         width: 890px ; padding-right: 20px; 
+                        
+                    }
+                    .item-menu::after {
+                        content: '';
+                        display: block;
+                        width: 100px;  height: 130px;
+                        background-color: $tertiaire-vert;
+                        position: absolute; top: 0px; right: -100px;
+                        transition: left .8s;
+                      }
+                      .item-menu:hover::after { right: 0px;}
+
+                    .check-hidden::after{
                             display: flex;
-                            color: transparent;
+                            color: white;
+                            transform: rotate(-50deg);
                             opacity: (0);
+                            
                         }
-                        .check-hidden:hover{
+                        /*.check-hidden:hover::after{
                             width: 80px;
                             height: 100px;
                             border-radius: 0px 10px 10px 0px;
                             color: white;
-                            background-color: $tertiaire-vert;
-                            opacity: (1);
-                        }
+                            transform: rotate(90deg);
+                           /* background-color: $tertiaire-vert;*/
+                          /*  opacity: (1);
+                            
+                        }*/
                     
                     .contenu{
                         display: flex;
@@ -81,8 +73,10 @@ background-position: center center;
             align-items: center;
             justify-content: space-between;
                     }
+                
+
                     
-                }
+                
                 /*---h1 menu a la francaise*/
 	.heading{
 		display: flex;
@@ -118,6 +112,11 @@ background-position: center center;
                     background-color: $tertiaire-vert;
                     height: 3px;
                     
+                }
+                /* h2 intitulé de la carte*/
+                 span.h2{
+                    display: flex;
+                    font-size: 15px;
                 }
 
                 /*animation carte */
