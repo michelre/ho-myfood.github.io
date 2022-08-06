@@ -19,7 +19,7 @@
                     background-color:#ffff;
                     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
                     border-radius: 10px 10px 10px 10px;
-                    width: 700px;
+                    width: 595px;
                     height: 90px;
                     margin-block: 10px;
                     transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
@@ -47,7 +47,9 @@
                         transition: left .8s;
                       }
                       .item-menu:hover::after { right: 0px;}
-
+.check-hidden{
+    color: transparent;
+}
                     .check-hidden::after{
                             display: flex;
                             color: white;
@@ -74,7 +76,24 @@
             justify-content: space-between;
                     }
                 
-
+                    .item-contenu{
+                         display: flex;
+                         flex-direction: column;
+                         margin: 0px 67px 2px 25px;
+                       
+                    }
+                    .item-price{
+                         display: flex;
+                         margin: 10px -52px 1px 1px;
+                    }
+                    .item-push-price{
+                        margin: 10px 1px 2px 185px;
+                    }
+                /* .item-section{
+                    opacity: 0;
+                    transform: translatey(-30px);
+                    animation: apparition 0.9s 1.5s ease-out forwards; 
+                 }  */ 
                     
                 
                 /*---h1 menu a la francaise*/

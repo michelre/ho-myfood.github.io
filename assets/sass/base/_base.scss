@@ -15,6 +15,7 @@ li{
 
 
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Roboto-regular','arial';
@@ -22,3 +23,37 @@ body{
     flex-direction: column;
     color: $corlor-typo;
 }
+/*
+.loader-container{
+    position: absolute;
+    background: #f1f1f1;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    z-index:99999;
+    
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 0 15px;
+    animation: loader infinite 0.4s alternate;
+}
+
+.d2 {
+    animation-delay: 0.05s;
+}
+.d3{
+    animation-delay: 0.1s;
+}
+@keyframes loader {
+    100%{
+        transform: translateY(-30px);
+    }
+}*/
+
