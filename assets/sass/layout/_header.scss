@@ -1,7 +1,7 @@
 .header_heading{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     
 
     .nav{
@@ -30,10 +30,11 @@
     align-items: center;
     }
 .nav_link-search{
-        display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-        justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     }
         .nav_link-activ-button{
             display: flex;
@@ -45,8 +46,8 @@
             margin-right: 10px;
             display: flex;
             align-items: center;
-            font-size: 20px;
-            text-transform:lowercase;
+            font-size: 22px;
+            text-transform:unset;
             font-weight:bolder;
         }
         
