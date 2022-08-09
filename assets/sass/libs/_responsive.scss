@@ -49,7 +49,7 @@ $medium-up: "only screen and (min-widht :768px)";
 }*/
 .container
 	 {
-	    width: 65%;
+	    width: 100%;
 	   
 	    margin-right: auto;
 	    margin-left: auto;
@@ -180,6 +180,12 @@ $medium-up: "only screen and (min-widht :768px)";
                
                 width: 100%;
         }
+        /*.footer .faq {
+            display: flex;
+            /* margin: 5px 5px 5px 1px; 
+            align-items: flex-start;
+            flex-direction: column;
+        }*/
         .img-logo {
             width: 173px;
             margin:  13px 10px 7px 40px;
@@ -236,8 +242,12 @@ $medium-up: "only screen and (min-widht :768px)";
             
         }
         .nav_container{
-           width: 101%;
+           width: 100%;
              
+}
+.nav_container .sous-titre {
+    
+    font-size: 18px;
 }
 .logo .img-logo {
     width: 173px;
@@ -277,7 +287,7 @@ $medium-up: "only screen and (min-widht :768px)";
 }
         .nav_container {
             width: 100%;
-            margin: -21px -1px;
+           /* margin: -21px -1px;*/
         }
         .header_heading {
             display: flex;
@@ -296,7 +306,7 @@ $medium-up: "only screen and (min-widht :768px)";
         .nav{
             margin-left: 0%;
             background-color: hsla(0deg, 25%, 10%, 0.04);
-              width: 700px;
+              /*width: 700px;*/
              height: 131px;
     
 }
@@ -369,7 +379,7 @@ $medium-up: "only screen and (min-widht :768px)";
             padding: 15px;
     width: 157px;
         }
-        .logo-header {
+        /*.logo-header {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -378,7 +388,7 @@ $medium-up: "only screen and (min-widht :768px)";
             box-shadow: 0px 8px 14px grey;
             width: 700px;
             height: 140px;
-        }
+        }*/
         .nav_link-search {
             display: flex;
             flex-direction: column;
@@ -397,8 +407,8 @@ $medium-up: "only screen and (min-widht :768px)";
             background-color:  hsla(0, 25%, 10%, 0.040);
         }
         .nav_container {
-            width: 700px;
-            margin: -10px -2px;
+            
+            margin: -29px -2px;
         }
         .logo {
             display: flex;
