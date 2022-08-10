@@ -110,20 +110,25 @@ flex-direction: column;
         width: 100px;
         top: 60px;
     }*/
-
-    .fa-regular::before{
+.fa-emoji{
+    display: flex;
+}
+   /* .fa-regular::before{
         content: "";
         position: absolute;
         background-color: $btn-degrade;
         width: 100%;
         height: 100%;
         top: 60px;
-    }
+    }*/
     .bck-img{
-        width: 126vh;
+        margin: 17px 9px 21px 4px;
+    width: 166vh;
 background-repeat: no-repeat;
 background-position: right 35% bottom 45%;
 background-size: cover;
 overflow: hidden;
 height: 170px;
     }
+   /* margin: 17px 9px 21px 4px;
+    width: 166vh;*/
