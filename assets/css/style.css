@@ -422,14 +422,14 @@ h2 {
 
 /*menu a la francaise....la palette...les delices...*/
 .menu {
-  background-color: rgba(243, 241, 241, 0.5);
+  /*background-color: rgba(243, 241, 241, 0.5);*/
   display: flex;
   margin: -17px 18px 43px 24px;
   flex-direction: column;
   align-items: center;
   opacity: 0;
   transform: translatey(-30px);
-  animation: apparition 0.9s 1.5s ease-out forwards;
+  animation: apparition 1.5s ease-out forwards;
 }
 
 .item-menu {
@@ -512,11 +512,30 @@ h2 {
   margin: 10px 1px 2px 185px;
 }
 
-/* .item-section{
-    opacity: 0;
-    transform: translatey(-30px);
-    animation: apparition 0.9s 1.5s ease-out forwards; 
- }  */
+.d-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translatey(-40px);
+  animation: apparition 0.9s 0.9s ease-out forwards;
+}
+
+.d_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: apparition 0.9s 1.5s ease-out forwards;
+}
+
+.item-section {
+  opacity: 0;
+  transform: translatey(-30px);
+  animation: apparition 0.9s 0.3s ease-out forwards;
+}
+
 /*---h1 menu a la francaise*/
 .heading {
   display: flex;
@@ -537,7 +556,7 @@ h1 {
   display: inline;
   text-transform: uppercase;
   left: 4%;
-  margin: 77px;
+  margin: 65px 10px 20px -37px;
   font-size: 25px;
   transform: translate(56px, -29px);
 }
@@ -681,7 +700,7 @@ span.h2 {
     }
 }*/
 .container {
-  width: 100%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   transition: all 0.5s ease-out;
