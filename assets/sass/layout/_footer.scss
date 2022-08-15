@@ -12,7 +12,7 @@
 
 
 .footer{
-    width: 100%;
+   width: 100%;
     background-color: #333;
     a{
         text-decoration: none;
@@ -20,17 +20,17 @@
         
     }
     p{
-        margin: -17px 77px 17px 35px;
+       /* margin: -17px 77px 17px 35px;*/
     }
     .faq{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 5px 5px 5px 5px;
+       /* margin: 5px 5px 5px 5px;*/
 
     }
     li{
-        margin: 10px 75px 15px 15px;
+       /* margin: 10px 75px 15px 15px;*/
         font-size: 16px;
     }
     i{

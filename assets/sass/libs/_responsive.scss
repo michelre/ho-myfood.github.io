@@ -49,14 +49,14 @@ $medium-up: "only screen and (min-widht :768px)";
 }*/
 .container
 	 {
-	    width: 90%;
-	   
-	    margin-right: auto;
-	    margin-left: auto;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
 	    transition: all 0.5s ease-out;
 	}
 
-    @media screen and (max-width: 1400px){
+    @media screen and (max-width: 1460px){
        
         .header_heading {
             width: 90%;
@@ -66,11 +66,11 @@ $medium-up: "only screen and (min-widht :768px)";
           
         }
         .nav_container{
-            width: 90%;
+            width: 100%;
         }
         .nav_link-search{
             
-            width: 90%;
+            width: 100%;
         }
         .nav_link-activ-button{
             width: 90%;
@@ -78,7 +78,7 @@ $medium-up: "only screen and (min-widht :768px)";
             align-items: center;
         }
         .containeur{
-            width: 90%;
+            width: 100%;
         }
        
         .filtre {
@@ -107,11 +107,18 @@ $medium-up: "only screen and (min-widht :768px)";
         
        }
        
+       
 
       
 
     }
-    @media (max-width: 1300px){
+    @media (max-width:1460px){
+        .press{
+            width: 100%;
+            margin: auto;
+        }
+    }
+    @media (max-width: 1360px){
         .nav_link-activ-button {
             display: flex;
             flex-direction: column;
@@ -153,9 +160,15 @@ $medium-up: "only screen and (min-widht :768px)";
             background-color:rgba( $primaire-mauve, 0.2);
             
         }
+       /* .footer {
+            width: 90%;
+            margin: 6px 64px;
+            padding: 29px 20px;
+           
+        }*/
         
     }
-   @media (max-width: 1200px){
+   @media all and (max-width: 1260px){
         .cart{
             margin: 16px 1px 9px 21px;
              /*width: 298px*/
@@ -212,7 +225,7 @@ $medium-up: "only screen and (min-widht :768px)";
 
 
     }
-    @media (max-width: 992px){
+    @media (max-width: 1060px){
        
 .nav_link-search{
     margin: 18px -2px 15px 64px;
@@ -221,6 +234,11 @@ $medium-up: "only screen and (min-widht :768px)";
             display: flex;
             flex-direction: column;
             align-items: center;
+           /* .nav_link-activ-button {
+                padding: 19px 11px 10px 105px;
+                display: flex;
+                align-items: center;
+            }*/
         }
           .flex{
             
@@ -363,10 +381,10 @@ $medium-up: "only screen and (min-widht :768px)";
     /* margin: 5px 5px 5px 5px; */
     align-items: flex-start;
 }
-.footer {
+/*.footer {
     width: 100%;
     margin: -17px 16px;
-}
+}*/
 .footer li {
     /* margin: 10px 75px 15px 15px; */
     font-size: 16px;

@@ -87,16 +87,16 @@ body {
   color: white;
 }
 .footer p {
-  margin: -17px 77px 17px 35px;
+  /* margin: -17px 77px 17px 35px;*/
 }
 .footer .faq {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 5px 5px 5px 5px;
+  /* margin: 5px 5px 5px 5px;*/
 }
 .footer li {
-  margin: 10px 75px 15px 15px;
+  /* margin: 10px 75px 15px 15px;*/
   font-size: 16px;
 }
 .footer i {
@@ -295,7 +295,7 @@ li span {
 .flex {
   display: flex;
   flex-direction: row;
-  margin: 65px 31px 1px 1px;
+  padding: 30px;
   align-items: center;
 }
 
@@ -426,11 +426,22 @@ h2 {
 
 /* margin: 17px 9px 21px 4px;
  width: 166vh;*/
+/*image header*/
+.bck-img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  background-size: cover;
+  overflow: hidden;
+  height: 170px;
+  /* margin: 16px 0px 14px 34px;*/
+}
+
 /*menu a la francaise....la palette...les delices...*/
 .menu {
   /*background-color: rgba(243, 241, 241, 0.5);*/
   display: flex;
-  margin: -17px 18px 51px 24px;
+  margin: 7px 0px 32px 0px;
   flex-direction: column;
   align-items: center;
   opacity: 0;
@@ -443,9 +454,9 @@ h2 {
   background-color: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 10px 10px;
-  width: 595px;
-  height: 90px;
-  margin-block: 10px;
+  width: 50%;
+  height: auto;
+  margin-block: 5px;
   transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
   transition-duration: 0.5s;
   position: relative;
@@ -467,53 +478,85 @@ h2 {
   position: absolute;
   top: 0px;
   right: -100px;
-  transition: left 0.8s;
+  transition: right 0.8s;
 }
 
 .item-menu:hover::after {
   right: 0px;
 }
 
+/* .item-menu:hover {
+     animation-delay: 0.2s;
+     animation-name: afl;
+ }
+ @keyframes afl {
+     from {
+         opacity: 0;
+         transform: translateX(05deg) rotate(-180deg);
+     }
+     to {
+         opacity: 1;
+         transform: translateX(0) rotate(0);
+     }
+ }*/
 .check-hidden {
   color: transparent;
-}
-
-.check-hidden::after {
-  display: flex;
-  color: white;
-  transform: rotate(-50deg);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
   opacity: 0;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+  /* width: 100%; */
+  padding: 10px 10px 5px 8px;
+  /* display: flex;
+   justify-content: center;
+   align-content: stretch;*/
 }
 
-/*.check-hidden:hover::after{
-    width: 80px;
-    height: 100px;
-    border-radius: 0px 10px 10px 0px;
-    color: white;
-    transform: rotate(90deg);
-   /* background-color: $tertiaire-vert;*/
-/*  opacity: (1);
+.check-hidden:hover {
+  color: rgb(248, 243, 243);
+  /*display: flex;*/
+  opacity: 1;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+  animation: afl;
+  transition: left 0.8s;
+  transform: rotate(-90);
+  transform: translate(-90deg);
+}
 
-}*/
 .contenu {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0px -1px 2px 27px;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .item-contenu {
+  width: 100%;
+  /* display: flex;
+   flex-direction: column;*/
+}
+
+.conteneur {
+  /* background-color: rgba(243, 241, 241, 0.5);*/
   display: flex;
   flex-direction: column;
-  margin: 0px 67px 2px 25px;
+  margin: auto;
+  width: 100%;
 }
 
-.item-price {
-  display: flex;
-  margin: 10px -52px 1px 1px;
-}
+/*.item-price{
+     display: flex;
+    /* margin: 10px -52px 1px 1px;
+}*/
+/*.price{
+    display: flex;
 
+}*/
 .item-push-price {
   margin: 10px 1px 2px 185px;
 }
@@ -555,16 +598,16 @@ h1 {
   font-family: Shrikhand-Regular;
 }
 
-.price {
-  display: flex;
-}
-
+/*span{
+    display: flex;
+}*/
 .section {
   position: absolute;
   display: inline;
   text-transform: uppercase;
   left: 4%;
-  margin: 65px 10px 20px -37px;
+  /* margin: 65px 10px 20px -37px;*/
+  padding: 80px 10px 10px 5px;
   font-size: 25px;
   transform: translate(56px, -29px);
 }
@@ -712,13 +755,14 @@ span.h2 {
     }
 }*/
 .container {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
   transition: all 0.5s ease-out;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1460px) {
   .header_heading {
     width: 90%;
     display: flex;
@@ -726,10 +770,10 @@ span.h2 {
     justify-content: space-between;
   }
   .nav_container {
-    width: 90%;
+    width: 100%;
   }
   .nav_link-search {
-    width: 90%;
+    width: 100%;
   }
   .nav_link-activ-button {
     width: 90%;
@@ -737,7 +781,7 @@ span.h2 {
     align-items: center;
   }
   .containeur {
-    width: 90%;
+    width: 100%;
   }
   .filtre {
     display: flex;
@@ -760,7 +804,13 @@ span.h2 {
     font-size: 15px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1460px) {
+  .press {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 1360px) {
   .nav_link-activ-button {
     display: flex;
     flex-direction: column;
@@ -795,8 +845,14 @@ span.h2 {
   li.active:hover {
     background-color: rgba(147, 86, 220, 0.2);
   }
+  /* .footer {
+       width: 90%;
+       margin: 6px 64px;
+       padding: 29px 20px;
+
+   }*/
 }
-@media (max-width: 1200px) {
+@media all and (max-width: 1260px) {
   .cart {
     margin: 16px 1px 9px 21px;
     /*width: 298px*/
@@ -843,7 +899,7 @@ span.h2 {
     font-size: 15px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1060px) {
   .nav_link-search {
     margin: 18px -2px 15px 64px;
   }
@@ -851,6 +907,11 @@ span.h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* .nav_link-activ-button {
+         padding: 19px 11px 10px 105px;
+         display: flex;
+         align-items: center;
+     }*/
   }
   .flex {
     flex-direction: column;
@@ -970,10 +1031,10 @@ span.h2 {
     /* margin: 5px 5px 5px 5px; */
     align-items: flex-start;
   }
-  .footer {
-    width: 100%;
-    margin: -17px 16px;
-  }
+  /*.footer {
+      width: 100%;
+      margin: -17px 16px;
+  }*/
   .footer li {
     /* margin: 10px 75px 15px 15px; */
     font-size: 16px;
