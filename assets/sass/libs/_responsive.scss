@@ -47,14 +47,7 @@ $medium-up: "only screen and (min-widht :768px)";
         max-width: 1320px;
     }
 }*/
-.container
-	 {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin: 0 auto;
-	    transition: all 0.5s ease-out;
-	}
+
 
     @media screen and (max-width: 1460px){
        
@@ -113,10 +106,7 @@ $medium-up: "only screen and (min-widht :768px)";
 
     }
     @media (max-width:1460px){
-        .press{
-            width: 100%;
-            margin: auto;
-        }
+        
     }
     @media (max-width: 1360px){
         .nav_link-activ-button {
