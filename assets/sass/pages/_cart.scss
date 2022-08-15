@@ -1,18 +1,18 @@
 
 /*image header*/
-.bck-img{
+        .bck-img{
 			width: 100%;
 			background-repeat: no-repeat;
 			background-position: right 35% bottom 45%;
 			background-size: cover;
-    overflow: hidden;
-    height: 170px;
-   /* margin: 16px 0px 14px 34px;*/
+            overflow: hidden;
+            height: 170px;
+   
 		}
 
         /*menu a la francaise....la palette...les delices...*/
 		.menu{
-            /*background-color: rgba(243, 241, 241, 0.5);*/
+           
             display: flex;
             margin: 7px 0px 32px 0px;
             
@@ -22,7 +22,7 @@
             transform: translatey(-30px);
             animation: apparition 1.5s ease-out forwards;
             
-                }
+            }
                 .item-menu{
                     display: inline-block;
                     background-color:#ffff;
@@ -40,11 +40,8 @@
                 }
                     
                     .item-menu:hover{
-                       
-                        
-                        transition: right 2s;
-
-                         width: 890px ; padding-right: 20px; 
+                         transition: right 2s;
+                        width: 890px ; padding-right: 20px; 
                         
                     }
                     .item-menu::after {
@@ -56,50 +53,32 @@
                         transition: right .8s;
                       }
 
-                      .item-menu:hover::after { right: 0px;}
+                    .item-menu:hover::after { right: 0px;}
                     
-                    
-                       
-                       /* .item-menu:hover {
-                            animation-delay: 0.2s;
-                            animation-name: afl;
-                        }
-                        @keyframes afl {
-                            from {
-                                opacity: 0;
-                                transform: translateX(05deg) rotate(-180deg);
-                            }
-                            to {
-                                opacity: 1;
-                                transform: translateX(0) rotate(0);
-                            }
-                        }*/
-                        .check-hidden {
-                            color: transparent;
+                    .check-hidden {
+                        color: transparent;
                             
-                            position: relative;
-                            overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
                             
-                            z-index: 2;
-                            opacity: 0;
-                            animation-duration: 0.2s;
-                            animation-fill-mode: both;
-                            /* width: 100%; */
-                            padding: 10px 10px 5px 8px;
-                           /* display: flex;
-                            justify-content: center;
-                            align-content: stretch;*/
+                        z-index: 2;
+                        opacity: 0;
+                        animation-duration: 0.2s;
+                        animation-fill-mode: both;
+                        /* width: 100%; */
+                        padding: 10px 10px 5px 8px;
+                        
                         }
-                      .check-hidden:hover{
-                             color: rgb(248, 243, 243);
-                             /*display: flex;*/
-                             opacity: 1;
-                             animation-duration: 0.2s;
-                             animation-fill-mode: both;
-                             animation: afl;
-                             transition: left .8s;
-                             transform: rotate(-90);
-                             transform: translate(-90deg);
+                    .check-hidden:hover{
+                        color: rgb(248, 243, 243);
+                        
+                        opacity: 1;
+                        animation-duration: 0.2s;
+                        animation-fill-mode: both;
+                        animation: afl;
+                        transition: left .8s;
+                        transform: rotate(-90);
+                        transform: translate(-90deg);
                             
                      }
                      .contenu {
@@ -112,37 +91,21 @@
                     }
                     .item-contenu {
                         width: 100%;
-                       /* display: flex;
-                        flex-direction: column;*/
+                       
                     }
         
         
-
-       .conteneur{
-       /* background-color: rgba(243, 241, 241, 0.5);*/
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 100%;
-       }
-                            
-                        
-                        
-                    
-                    
-                
-                    
-                    /*.item-price{
-                         display: flex;
-                        /* margin: 10px -52px 1px 1px;
-                    }*/
-                    /*.price{
+                    .conteneur{
+       
                         display: flex;
-                        
-                    }*/
-                    .item-push-price{
-                        margin: 10px 1px 2px 185px;
+                        flex-direction: column;
+                        margin: auto;
+                        width: 100%;
                     }
+                    
+                    /*.item-push-price{
+                        margin: 10px 1px 2px 185px;
+                    }*/
                     .d-content{
                     display: flex;
                     flex-direction: column;
@@ -187,14 +150,14 @@
     }*/
                 
                 .section{
-                    position: absolute;
+                   /* position: absolute;*/
                     display: inline;
                     text-transform: uppercase;
                     left: 4%;
                    /* margin: 65px 10px 20px -37px;*/
                    padding: 80px 10px 10px 5px;
                        font-size: 25px;
-                    transform: translate(56px, -29px);
+                    transform: translate(1px, -29px);
         
         
                 }
