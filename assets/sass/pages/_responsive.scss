@@ -2,6 +2,12 @@
     .class-fa{
         margin: 31px 42px 0px 49px; 
     }
+    .logo {
+        display: flex;
+        justify-content:flex-start;
+        margin-top: 5px;
+        width: 100%;
+    }
 
 }
 @media  (max-width: 800px){
@@ -41,9 +47,16 @@
         width: 64px;
         border: none;
         font-size: 28px;
-        margin: 31px 42px 0px 49px;
+        width: 100%;
+      /*  margin: 77px 42px 0px 49px;*/
 
 	}
+    .nav-logo{
+		height: 12px;
+		align-items: center;
+		
+	}
+    
     .conteneur{
         background-color: rgba(243, 241, 241, 0.988);
         border-radius: 50px 50px 0 0;

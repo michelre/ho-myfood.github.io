@@ -4,7 +4,7 @@
     flex-direction: column;
 }
 /*image container*/
-.container
+.containt
 	 {
         width: 100%;
         padding-right: 15px;
@@ -117,9 +117,7 @@
                         width: 100%;
                     }
                     
-                    /*.item-push-price{
-                        margin: 10px 1px 2px 185px;
-                    }*/
+                    
                     .d-content{
                     display: flex;
                     flex-direction: column;
@@ -154,14 +152,12 @@
                 }
 
 	
-    h1{
-        
-        font-family:Shrikhand-Regular ;
-    }	
+                h1{
+                    
+                  font-family:Shrikhand-Regular ;
+                }	
 	
-    /*span{
-        display: flex;
-    }*/
+   
                 
                 .section{
                    /* position: absolute;*/
@@ -193,10 +189,10 @@
                 }
 
                 /*animation carte */
-	@keyframes apparition{
-		100%{
-			opacity: 1;
-			transform: none;
-		}
+	            @keyframes apparition{
+		            100%{
+			        opacity: 1;
+			        transform: none;
+		            }
         
-	}
+	            }
