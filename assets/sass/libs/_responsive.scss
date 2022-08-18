@@ -172,23 +172,15 @@ $medium-up: "only screen and (min-widht :768px)";
             margin: 25px 66px 32px -5px;
         }
        
-        .img-logo {
-            width: 173px;
-            margin:  13px 10px 7px 40px;
-      
-        }
+        
         
         .footer .faq {
             display: flex;
             justify-content: flex-start;
-            /* margin: 5px 5px 5px 1px; */
-            align-items: flex-start;
-            flex-direction: row;
-        }
-        .footer li {
            
-            font-size: 15px;
+           
         }
+        
 
 
 
@@ -216,16 +208,11 @@ $medium-up: "only screen and (min-widht :768px)";
         .nav_container{
            width: 100%;
              
-}
-.nav_container .sous-titre {
-    
-    font-size: 18px;
-}
-.logo .img-logo {
-    width: 173px;
-    margin:  13px 10px 7px 40px;
-
-}   
+        }
+        .nav_container .sous-titre {
+            font-size: 18px;
+        }
+  
 
         .header_heading {       
    
@@ -301,65 +288,48 @@ $medium-up: "only screen and (min-widht :768px)";
 
         
         .nav{
-            margin-left: 0%;
-            background-color: hsla(0deg, 25%, 10%, 0.04);
+           
+            background-color:  rgba(97, 94, 94, 0.165);
               /*width: 700px;*/
-             height: 131px;
+             height: 90px;
     
         }
-        .img-logo {
-         margin: 15px 8px -4px 52px;
-         width: 239px;
-            
-        }
+        
         .text {
-            background-color:  hsla(0, 25%, 10%, 0.040);
+            background-color: hsl(0deg 25% 10% / 0%);
         }
         
-        .fa-style {
-    font-size: 21px;
-    display: flex;
+        
+        
+        
+        .listes-services {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
         }
         
-.menu-link {
-   /* font-size: 19px;*/
-    margin: 0px 0px 0px 6px;
-}
-
-
-
-.footer .faq {
-    display: flex;
-    flex-direction: column;
-    /* margin: 5px 5px 5px 5px; */
-    align-items: flex-start;
-}
-/*.footer {
-    width: 100%;
-    margin: -17px 16px;
-}*/
-.footer li {
-    /* margin: 10px 75px 15px 15px; */
-    font-size: 16px;
-}
-
-    }
+        .contenu-footer a {
+            margin: 0px 2px 2px 14px;
+            color: white;
+            align-items: flex-start;
+        }
+        .logo{
+           flex-direction: column;
+           align-items: center;
+        }
+        .img-logo {
+            margin: 2px 5px 2px 16px;
+        }
+        .menu-link {
+            margin: 0px 0px 0px 23px;
+        }
+     }
     @media  (max-width: 500px){
         .button{
-            font-size: 15px;
-            padding: 15px;
-    width: 157px;
+            font-size: 17px;
+            width: 229px;
         }
-        /*.logo-header {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            background-color: white;
-            box-shadow: 0px 8px 14px grey;
-            width: 700px;
-            height: 140px;
-        }*/
+        
         .nav_link-search {
             display: flex;
             flex-direction: column;
@@ -368,40 +338,35 @@ $medium-up: "only screen and (min-widht :768px)";
             justify-content: space-between;
             align-items: center;
         }
-        .header_heading {
-            margin: 29px 81px;
-            display: flex;
+        .nav_container .sous-titre {
+            text-align: center;
+            font-size: 17px;
+            font-style:unset;
+        }
+        .nav_container .titre {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .logo{
             flex-direction: column;
-            justify-content: space-between;
-        }
-        .nav{
-            background-color:  hsla(0, 25%, 10%, 0.040);
-        }
-        .nav_container {
-            
-            margin: -29px -2px;
-        }
+            align-items: flex-start;
+         }
        
-        .img-logo{
-            margin: 20px 20px 20px 20px;
-        }
-        
-        
-        
-        
-        .btn .familial {
-            font-size: 15px;
-            margin: 2px 43px 5px 52px;
-            justify-content: center;
-        }
 
     }
 
     @media  (max-width:375px){
 
-.btn .familial {
-    font-size: 15px;
-    margin: 2px 43px 5px 52px;
-    justify-content: center;
+.nav_link-search {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    align-items: flex-start;
+}
+.btn li {
+    width: 316px;
+    margin: 9px 0px 17px 0px;
 }
     }
