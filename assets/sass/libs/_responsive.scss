@@ -104,7 +104,7 @@ $medium-up: "only screen and (min-widht :768px)";
 
     }
    
-    @media (max-width: 1360px){
+    @media screen and  (max-width: 1360px){
         .nav_link-activ-button {
             display: flex;
             flex-direction: column;
@@ -185,7 +185,7 @@ $medium-up: "only screen and (min-widht :768px)";
 
 
     }
-    @media (max-width: 1060px){
+    @media screen and  (max-width: 1060px){
        
 
         
@@ -207,10 +207,13 @@ $medium-up: "only screen and (min-widht :768px)";
         
         .nav_container{
            width: 100%;
+           height: 300px;
              
         }
         .nav_container .sous-titre {
             font-size: 18px;
+            padding: 18px;
+            text-align: center;
         }
   
 
@@ -226,7 +229,7 @@ $medium-up: "only screen and (min-widht :768px)";
 
     
 
-    @media  (max-width: 768px){
+    @media screen and (max-width: 768px){
         .container{
             padding-left: 0;
             padding-right: 0;
@@ -238,14 +241,14 @@ $medium-up: "only screen and (min-widht :768px)";
         flex-direction: column;
         align-items: center;
         background-color: white;
-        box-shadow: 0px 8px 14px grey;
+        box-shadow: 0px 8px 14px rgb(0 0 0 / 20%);
         width:100%;
         height: auto;
     
         }
         .header_heading .nav {
             width: 100%;
-            box-shadow: 0px 8px 14px grey;
+            box-shadow: 0px 8px 14px #eee;
             justify-content: space-around;
             align-items: center;
         }
@@ -315,7 +318,7 @@ $medium-up: "only screen and (min-widht :768px)";
         }
         .logo{
            flex-direction: column;
-           align-items: center;
+           align-items: flex-start;
         }
         .img-logo {
             margin: 2px 5px 2px 16px;
@@ -324,19 +327,22 @@ $medium-up: "only screen and (min-widht :768px)";
             margin: 0px 0px 0px 23px;
         }
      }
-    @media  (max-width: 500px){
+    @media all and (max-width: 500px){
+        .filtre {
+            margin-left: 41px;
+        }
         .button{
             font-size: 17px;
             width: 229px;
         }
         
         .nav_link-search {
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            margin-bottom: 10px;
+           
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+        }
+        .nav_container{
+            height: 300px;
         }
         .nav_container .sous-titre {
             text-align: center;
@@ -345,7 +351,7 @@ $medium-up: "only screen and (min-widht :768px)";
         }
         .nav_container .titre {
             text-align: center;
-            font-size: 25px;
+            font-size: 27px;
             font-weight: 900;
         }
         .logo{
@@ -355,7 +361,16 @@ $medium-up: "only screen and (min-widht :768px)";
        
 
     }
-
+    @media  (max-width:419px){
+        .btn li {
+            width: 290px;
+            margin: 9px 0px 17px 0px;
+        } 
+        .menu-link {
+            font-size: 17px;
+            margin: 0px 0px 0px 23px;
+        }
+    }
     @media  (max-width:375px){
 
 .nav_link-search {
@@ -366,7 +381,20 @@ $medium-up: "only screen and (min-widht :768px)";
     align-items: flex-start;
 }
 .btn li {
-    width: 316px;
+    width: 290px;
     margin: 9px 0px 17px 0px;
+}
+.flex{
+    padding: 0;
+}
+.text {
+    
+    padding: 0px;
+    margin-right: -74px;
+    border: 0px;
+    padding-left: 7px;
+    padding-right: -8px;
+    
+    left: -4px;
 }
     }

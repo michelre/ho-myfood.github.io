@@ -19,32 +19,7 @@
 }
 
 
-/*.footer{
-   width: 100%;
-    background-color: #333;
-    a{
-        text-decoration: none;
-        color: #ffff;
-        
-    }
-    
-    .faq{
-        display: flex;
-        
-        align-items: center;
-       
 
-    }
-    li{
-        margin: 10px 75px 15px 15px;
-        font-size: 16px;
-    }
-    i{
-        color: #ffff;
-    }
-   
-
-}*/
 
 .font-awesome{
     display: flex;
@@ -89,7 +64,7 @@
 
 .contenu-footer{
     
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
     background-color: #333;
     color: #ffff;
     width: 100%;  

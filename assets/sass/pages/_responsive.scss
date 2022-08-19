@@ -1,4 +1,4 @@
-@media  (max-width: 1265px){
+@media screen and (max-width: 1265px){
     .class-fa{
         margin: 31px 42px 0px 49px; 
     }
@@ -11,7 +11,7 @@
     
 
 }
-@media  (max-width: 800px){
+@media screen and (max-width: 800px){
     .heading {
         
         flex-direction: row;
@@ -42,18 +42,21 @@
         cursor: pointer;
         transition: 0.5s;
         color: black;
-        background-color:white;
+        background-color:rgba(255, 255, 255, 0);
         border-radius: 17px;
         height: 35px;
-        width: 64px;
-        border: none;
+        
+        
         font-size: 28px;
-        width: 100%;
+        width: 0;
       /*  margin: 77px 42px 0px 49px;*/
 
 	}
+    a .class-fa{
+        margin: 20px;
+    }
     .nav-logo{
-		height: 12px;
+		height: 40px;
 		align-items: center;
 		
 	}
@@ -74,12 +77,14 @@
         margin: 15px 2px 9px -2px;
     }
 }
-@media  (max-width: 600px){
+@media screen and (max-width: 600px){
+    .containt{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .nav_btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 55px;
+        margin: 23px 90px 13px 40px;
+        
     }
     .contenu-footer a {
         margin: 26px 5px 10px -10px;
@@ -87,23 +92,28 @@
     li{
         font-size: 18px;
     }
+    .section{
+        padding: 15px;
+        font-size: 20px;
+    }
     .menu {
         
-        margin: 50px; 
+        margin: 35px; 
         align-items: flex-start;
         
     }
     .d_flex {
-        margin: 50px;
+        margin: 35px;
         align-items: flex-start;
     }
     .d-content {
         align-items: flex-start;
-        margin: 50px 
+        margin: 35px 
         }
         .item-menu {
             width: 100%;
         }
+        
 }
 @media  (max-width: 375px){
 
