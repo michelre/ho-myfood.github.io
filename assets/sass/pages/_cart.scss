@@ -90,8 +90,8 @@
                         animation-duration: 0.2s;
                         
                         animation: afl;
-                        padding: 15px 90px 18px 9px;
-                        transform: rotate(-360deg);
+                      /*  padding: 15px 90px 18px 9px;*/
+                        transition: all 3s ease-out;
                         transition: transform 500ms ease-in-out;
                         transition: left .8s;
                         
@@ -101,11 +101,12 @@
                      }
                      @keyframes afl{
                         from{
-                        opacity: 1;
-                        transform: rotate(-90);
+                        opacity: 0;
+                        transform: rotatex(90deg);
                         }
                         to{
-
+                        opacity:1 ;
+                        transform: rotatex(-90deg);
                         }
             
                     }

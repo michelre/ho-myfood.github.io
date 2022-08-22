@@ -10,4 +10,10 @@
 @mixin logo {
     
 }
-                 
+@mixin gradient-animation( $start, $end, $transTime, $content ) {
+   position: relative;
+   
+    }
+    
+  
+  

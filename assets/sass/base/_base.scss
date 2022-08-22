@@ -20,40 +20,60 @@ body{
     padding: 0;
     font-family: 'Roboto-regular','arial';
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     color: $corlor-typo;
-    animation: loader-container 0ms  both;
+    
 }
 .content{
     flex: 1 0 auto;
 }
 
-/*.loader-container{
+.loader-container{
     position: absolute;
     background: #f1f1f1fe;
     width: 100%;
-    height:1100px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: loader-container;
-   /* animation-iteration-count: 1.5;
-    transform: translateY(-2rem);
-	animation: loader-container 10s cubic-bezier(.5,.5,0,1);
-    transform-origin: 40% 80%;
-
-    opacity: 1;
-    z-index:99999;
+    animation-iteration-count: 1;
+    animation: deplacement 5s;
+    opacity: 0;
     
-}*/
+    
+}
+@keyframes deplacement {
+    
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+    50% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
      
+.loader-dot {
+    
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 
-
-/*.dot{
+.dot{
     height: 11px;
     width: 11px;
     border-radius: 50%;
@@ -102,41 +122,7 @@ body{
     }
     
 }
-@keyframes loader-container {
-    25%{
-        opacity: 0.5;
-    }
-  
-    50%{
-        animation: both;
-    }    
-   
-    100%{
-        transform: scale(5);
-        animation-iteration-count: 1;
-    }
-    
-}
-@keyframes loader-container{
-    0% {
-        transform: scale(0);
-        background-color: transparent;
-    }
-    
-    24% {
-        transform: scale(1);
-        animation-timing-function: cubic-bezier(.9,0,.1,1);
-        opacity: 0.5;
-    }
-    46% {
-        transform: scale(0.2);
-        animation-timing-function: cubic-bezier(.25,0.25,1);
-    }
-    100% {
-        transform: scale(1);
-        background-color: transparent;
-    }
-}*/
+
 
 
 

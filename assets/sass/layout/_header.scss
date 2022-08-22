@@ -126,6 +126,7 @@ align-items: center;
     
     
     li{
+        cursor: pointer;
         display: flex;
         align-items: center;
         width: 250px;
@@ -161,12 +162,12 @@ li.btn-item:hover{
 li.btn-item:hover i{
     color:$primaire-mauve-clair;
 }
-/*li.btn-item:hover
+li.btn-item:hover
 {
     background-color:rgba( $primaire-mauve, 0.2);
     
     
-}*/
+}
 li span{
     color: white;
     position: absolute;
@@ -183,7 +184,7 @@ li span{
 .btn i:hover{
     color:rgb(146 86 220 / 91%);
 }
-.font .fa-solid{
+/*.font .fa-solid{
     display: flex;
  color:#505050;
  transition: all 2s ease 0;
@@ -192,14 +193,15 @@ li span{
 justify-content: flex-end;
 flex-direction: row;
 align-content: stretch;
-margin-top: -18px;
+ margin-top: -18px;
 margin-right: 18px;
-}
+}*/
 
-.font .fa-solid:hover {
+/*.font .fa-solid:hover {
     cursor: pointer;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-     
+    /*transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.5s ease-out;
+  
         background: -webkit-gradient(linear, left top, left bottom, from($primaire-mauve), to(
             $secondaire-rose
         ));
@@ -208,8 +210,70 @@ margin-right: 18px;
     
    
         
-    
+         
+}*/
+.font .visibleSolid .hiddenHoverSolid   {
+
+    display: flex;
+ color:#07060638;
+ transition: all 2s ease 0;
+ 
+ 
+justify-content: flex-end;
+flex-direction: row;
+align-content: stretch;
+/*margin-top: -18px;
+margin-right: -18px;*/
 }
 
-            
-    
+@mixin gradient-animation( $start, $end, $transTime, $content) {
+    background-size: 100%;
+    // background-image: linear-gradient($start, $end);
+    content: "\f004";
+    position: relative;
+    z-index: 100;
+    &:after {
+        background-image: linear-gradient($primaire-mauve, $secondaire-rose);
+        content: $content;
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: 200;
+        transition: opacity $transTime;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+
+.hiddenHoverSolid {
+    display: none
+}
+
+.font {
+    &:hover {
+        .visibleSolid {
+            display: none;
+        }
+    }
+}
+
+.font {
+    &:hover {
+        .hiddenHoverSolid {
+            display: block;
+            @include gradient-animation(purple, pink, 1s, "\f004");
+          
+            position: relative;
+        }
+    }
+}
