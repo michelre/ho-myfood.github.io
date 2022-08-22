@@ -54,7 +54,7 @@
                     
                     .item-menu:hover{
                          transition: right 2s;
-                        width: 890px ; padding-right: 20px; 
+                        width:50% ; padding-right: 20px; 
                         
                     }
                     .item-menu::after {
@@ -64,48 +64,77 @@
                         background-color: $tertiaire-vert;
                         position: absolute; top: 0px; right: -100px;
                         transition: right .8s;
+
+                       
                       }
 
                     .item-menu:hover::after { right: 0px;}
                     
                     .check-hidden {
-                        color: transparent;
-                            
-                        position: relative;
+                        color: black;
                         overflow: hidden;
                             
-                        z-index: 2;
+                        
                         opacity: 0;
                         animation-duration: 0.2s;
                         animation-fill-mode: both;
                         /* width: 100%; */
-                        padding: 10px 10px 5px 8px;
+                        padding: 15px 20px 18px 9px;
+                    }
                         
-                        }
+                        
                     .check-hidden:hover{
                         color: rgb(248, 243, 243);
-                        
+                        position: relative;
                         opacity: 1;
                         animation-duration: 0.2s;
-                        animation-fill-mode: both;
+                        
                         animation: afl;
+                        padding: 15px 90px 18px 9px;
+                        transform: rotate(-360deg);
+                        transition: transform 500ms ease-in-out;
                         transition: left .8s;
-                        transform: rotate(-90);
-                        transform: translate(-90deg);
+                        
+                       
+                        z-index: 2;
                             
                      }
+                     @keyframes afl{
+                        from{
+                        opacity: 1;
+                        transform: rotate(-90);
+                        }
+                        to{
+
+                        }
+            
+                    }
                      .contenu {
                         width: 100%;
                         display: flex;
                         cursor: pointer;
                         margin: 0px -1px 2px 27px;
                         align-items: flex-end;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         justify-content: space-around;
                     }
                     .item-contenu {
                         width: 100%;
                        
                     }
+                    span.price::after{
+                        content: "";
+                        position: absolute;
+                        right: 100px;
+                        transition: right .8s;
+                
+                        margin-right: 100px;
+                    }  
+                    span.price:hover {
+                        margin-right: 100px;
+                    }  
         
         
                     .conteneur{

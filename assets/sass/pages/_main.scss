@@ -7,7 +7,7 @@
     cursor: pointer;
     transition: 0.5s;
     color: black;
-    background-color: #99E2D0;
+    
     border-radius: 17px;
     height: 35px;
     width: 64px;
@@ -51,6 +51,7 @@
 
 	/*bouton commander*/
 	.tchek{
+		margin: 0px 0px 27px 0px;
 		display: flex;
 		justify-content: center;
 	}

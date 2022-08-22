@@ -1,8 +1,6 @@
 @media screen and (max-width: 1265px){
-    .class-fa{
-        margin: 31px 42px 0px 49px; 
-    }
-    .logo {
+   
+    .logo-footer {
         display: flex;
         justify-content:flex-start;
         margin-top: 5px;
@@ -35,26 +33,12 @@
         height: 280px;
         z-index: -1;
     }
-    .class-fa{
-		padding: 1px;
-        margin-top: 19px;
-        text-align: center;
-        cursor: pointer;
-        transition: 0.5s;
-        color: black;
-        background-color:rgba(255, 255, 255, 0);
-        border-radius: 17px;
-        height: 35px;
-        
-        
-        font-size: 28px;
+    .class-fa {
+        background-color: rgba(255, 255, 255, 0);
         width: 0;
-      /*  margin: 77px 42px 0px 49px;*/
-
-	}
-    a .class-fa{
-        margin: 20px;
+        margin: 16px 43px 0px 1px;
     }
+    
     .nav-logo{
 		height: 40px;
 		align-items: center;
@@ -74,7 +58,7 @@
     }*/
     h2 {
         font-size: 16px;
-        margin: 15px 2px 9px -2px;
+        margin: 15px 2px 9px 2px;
     }
 }
 @media screen and (max-width: 600px){
@@ -82,10 +66,10 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .nav_btn {
+   /* .nav_btn {
         margin: 23px 90px 13px 40px;
         
-    }
+    }*/
     .contenu-footer a {
         margin: 26px 5px 10px -10px;
     }
@@ -113,7 +97,28 @@
         .item-menu {
             width: 100%;
         }
-        
+        svg{
+            padding: 2px 2px 1px 1px;
+         }
+    .item-menu:hover{
+        transition: right 2s;
+        width:100% ; padding-right: 20px; 
+           
+       }  
+       /*.price{
+        right: 100px;
+       }
+       .item-contenu span.price::after{
+        content: "";
+        position: absolute;
+        right: 100px;
+        transition: right .8s;
+
+        margin-right: 100px;
+    }  
+    span.price:hover {
+        margin-right: 100px;
+    }  */
 }
 @media  (max-width: 375px){
 
