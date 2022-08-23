@@ -24,7 +24,7 @@
         
         position: relative;
         top: 64px;
-        left: -7px;
+        left: 3px;
         width: 100%;
         background-repeat: no-repeat;
         background-position: right 35% bottom 21%;
@@ -51,14 +51,61 @@
         margin: auto;
         width: 100%;
     }
+    .item-contenu {
+        width: 85%;
+       
+    }
+    .item-menu{
+        width: 70%;
+    }
+    /*.contenu .price {
+        padding: 32px 3px 23px 20px;
+        transition: all 0.5s ease-out;
+    }*/
+    .contenu .item-contenu {
+        padding: 10px;
+    }
+    
+   .contenu .price {
+        padding: 28px 10px 2px 2px;
+        transition: all 0.5s ease-out;
+    }
+
+    .check-hidden {
+        background-color: #99E2D0;
+        height: 100%;
+        padding: 22px;
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        position: absolute;
+        right: -100px;
+    }
+    .check-hidden i {
+        position: relative;
+        left: -64px;
+        transition: all 0.5s ease-out;
+        color: #fff;
+        font-size: 17px;
+    }
+    .contenu:hover .price {
+        transform: translateX(-59px);
+    }
    /* .section {
         font-size: 18px;
         position: absolute; 
         transform: translate(1px, -29px);
     }*/
     h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 16px;
         margin: 15px 2px 9px 2px;
+    }
+    span.h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 @media screen and (max-width: 600px){
@@ -86,6 +133,18 @@
         align-items: flex-start;
         
     }
+    h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        margin: 15px 2px 9px 2px;
+    }
+    span.h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .d_flex {
         margin: 35px;
         align-items: flex-start;
@@ -94,9 +153,13 @@
         align-items: flex-start;
         margin: 35px 
         }
+        .contenu:hover .price {
+            transform: translateX(-45px);
+        }
         .item-menu {
             width: 100%;
         }
+       
         svg{
             padding: 2px 2px 1px 1px;
          }

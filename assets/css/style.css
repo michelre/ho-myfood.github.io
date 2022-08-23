@@ -145,6 +145,7 @@ body {
 }
 
 svg {
+  padding: 2px;
   margin: auto 0px 21px;
 }
 
@@ -382,10 +383,6 @@ align-content: stretch;
 margin-top: -18px;
 margin-right: -18px;
 }*/
-.font {
-  margin: -20px -58px -35px 212px;
-}
-
 .hiddenHoverSolid {
   display: none;
 }
@@ -479,7 +476,7 @@ a {
   background-size: cover;
   overflow: hidden;
   height: 170px;
-  margin: 16px 0px 14px 34px;
+  margin: 16px 0px 14px -4px;
 }
 
 .fonction {
@@ -496,8 +493,10 @@ h2 {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 15px 12px 11px 25px;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .content h2 {
@@ -543,18 +542,27 @@ h2 {
      height: 100%;
      top: 60px;
  }*/
+/* .bck-img{
+        margin: 17px 9px 21px 4px;
+    width: 166vh;
+background-repeat: no-repeat;
+background-position: right 35% bottom 45%;
+background-size: cover;
+overflow: hidden;
+height: 170px;
+    }
+   /* margin: 17px 9px 21px 4px;
+    width: 166vh;*/
 .bck-img {
-  margin: 17px 9px 21px 4px;
-  width: 166vh;
+  width: 124vh;
   background-repeat: no-repeat;
   background-position: right 35% bottom 45%;
   background-size: cover;
   overflow: hidden;
   height: 170px;
+  margin: 16px 0px 14px -4px;
 }
 
-/* margin: 17px 9px 21px 4px;
- width: 166vh;*/
 /*header*/
 .header {
   display: flex;
@@ -564,8 +572,8 @@ h2 {
 /*image container*/
 .containt {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
   margin: 0 auto;
   transition: all 0.5s ease-out;
 }
@@ -605,65 +613,43 @@ h2 {
   overflow: hidden;
 }
 
-.item-menu:hover {
-  transition: right 2s;
-  width: 50%;
-  padding-right: 20px;
+.contenu .item-contenu {
+  padding: 20px;
 }
 
-.item-menu::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 130px;
-  background-color: #99E2D0;
-  position: absolute;
-  top: 0px;
-  right: -100px;
-  transition: right 0.8s;
-}
-
-.item-menu:hover::after {
-  right: 0px;
+.contenu .price {
+  padding: 30px 20px 10px 20px;
+  transition: all 0.5s ease-out;
 }
 
 .check-hidden {
-  color: black;
+  background-color: #99E2D0;
+  height: 100%;
+  padding: 31px;
   overflow: hidden;
-  opacity: 0;
-  animation-duration: 1s;
-  /* width: 100%; */
-  padding: 15px 20px 18px 9px;
-}
-
-.check-hidden:hover {
-  opacity: 1;
-  transition: left 2s;
-  rotate: 0.5 -0.5 2 -90deg;
-  margin-right: 90px;
-}
-
-.check-hidden::after {
-  content: "";
-  color: rgb(244, 241, 241);
+  transition: all 0.5s ease-out;
   position: absolute;
-  top: 0;
-  right: -50px;
-  opacity: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-  transition: left 0.8s;
-  animation-duration: 0.2s;
-  rotate: 0.5 -0.5 2;
-  margin-right: 100px;
-  /* animation: afl;
-  /*  padding: 15px 90px 18px 9px;
-    transition: all 3s ease-out;
-    transition: transform 500ms ease-in-out;
-    transition: left .8s;
+  right: -100px;
+}
 
+.check-hidden i {
+  position: relative;
+  left: -60px;
+  transition: all 0.5s ease-out;
+  color: #fff;
+  font-size: 25px;
+}
 
-    z-index: 2;*/
+.contenu:hover .check-hidden {
+  transform: translateX(-100px);
+}
+
+.contenu:hover .price {
+  transform: translateX(-100px);
+}
+
+.contenu:hover i {
+  transform: translateX(60px) rotate(380deg);
 }
 
 .check-hidden::after {
@@ -684,12 +670,18 @@ h2 {
   width: 100%;
   display: flex;
   cursor: pointer;
-  margin: 0px -1px 2px 27px;
-  align-items: flex-end;
+  /* margin: 0px -1px 2px 27px; */
+  align-items: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   justify-content: space-around;
+  /* padding: 10px; */
+}
+
+.contenu h2 {
+  font-size: 18px;
+  margin: 0px 9px 8px 2px;
 }
 
 .item-contenu {
@@ -701,10 +693,6 @@ span.price::after {
   position: absolute;
   right: 100px;
   transition: right 0.8s;
-  margin-right: 100px;
-}
-
-span.price:hover {
   margin-right: 100px;
 }
 
@@ -882,7 +870,7 @@ span.h2 {
   .bck-img {
     position: relative;
     top: 64px;
-    left: -7px;
+    left: 3px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: right 35% bottom 21%;
@@ -906,14 +894,58 @@ span.h2 {
     margin: auto;
     width: 100%;
   }
+  .item-contenu {
+    width: 85%;
+  }
+  .item-menu {
+    width: 70%;
+  }
+  /*.contenu .price {
+      padding: 32px 3px 23px 20px;
+      transition: all 0.5s ease-out;
+  }*/
+  .contenu .item-contenu {
+    padding: 10px;
+  }
+  .contenu .price {
+    padding: 28px 10px 2px 2px;
+    transition: all 0.5s ease-out;
+  }
+  .check-hidden {
+    background-color: #99E2D0;
+    height: 100%;
+    padding: 22px;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    right: -100px;
+  }
+  .check-hidden i {
+    position: relative;
+    left: -64px;
+    transition: all 0.5s ease-out;
+    color: #fff;
+    font-size: 17px;
+  }
+  .contenu:hover .price {
+    transform: translateX(-59px);
+  }
   /* .section {
        font-size: 18px;
        position: absolute; 
        transform: translate(1px, -29px);
    }*/
   h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 16px;
     margin: 15px 2px 9px 2px;
+  }
+  span.h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 @media screen and (max-width: 600px) {
@@ -939,6 +971,18 @@ span.h2 {
     margin: 35px;
     align-items: flex-start;
   }
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    margin: 15px 2px 9px 2px;
+  }
+  span.h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .d_flex {
     margin: 35px;
     align-items: flex-start;
@@ -946,6 +990,9 @@ span.h2 {
   .d-content {
     align-items: flex-start;
     margin: 35px;
+  }
+  .contenu:hover .price {
+    transform: translateX(-45px);
   }
   .item-menu {
     width: 100%;
@@ -1056,7 +1103,6 @@ span.h2 {
     margin: 5px 0px 4px 0px;
   }
   .content {
-    margin: 19px 7px 0px 17px;
     font-size: 15px;
   }
 }

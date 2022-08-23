@@ -62,7 +62,7 @@
 			background-size: cover;
             overflow: hidden;
             height: 170px;
-                margin: 16px 0px 14px 34px;
+                margin: 16px 0px 14px -4px;
 		}
 
         .fonction{
@@ -77,11 +77,15 @@
             margin: 26px 9px 8px 2px;
     
         }
-        .content{
-        display: flex;
-        flex-direction: column;
-        margin: 15px 12px 11px 25px;
-        }
+        
+            .content {
+                display: flex;
+                flex-direction: row;
+                margin: 15px 12px 11px 25px;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        
         .content h2 {
         font-size: 18px;
         margin: 0px;
@@ -123,7 +127,7 @@
         height: 100%;
         top: 60px;
     }*/
-    .bck-img{
+   /* .bck-img{
         margin: 17px 9px 21px 4px;
     width: 166vh;
 background-repeat: no-repeat;
@@ -134,3 +138,13 @@ height: 170px;
     }
    /* margin: 17px 9px 21px 4px;
     width: 166vh;*/
+
+    .bck-img{
+        width: 124vh;
+        background-repeat: no-repeat;
+        background-position: right 35% bottom 45%;
+        background-size: cover;
+        overflow: hidden;
+        height: 170px;
+        margin: 16px 0px 14px -4px;
+    }

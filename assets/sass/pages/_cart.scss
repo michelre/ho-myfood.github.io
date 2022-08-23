@@ -7,8 +7,8 @@
 .containt
 	 {
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        /*padding-right: 15px;
+        padding-left: 15px;*/
         margin: 0 auto;
 	    transition: all 0.5s ease-out;
 	}
@@ -51,92 +51,71 @@
                 
                 
                 }
+                .contenu .item-contenu {
+                    padding: 20px;
+                }
+                
+                .contenu .price {
+                    padding: 30px 20px 10px 20px;
+                    transition: all 0.5s ease-out;
+                }
+
+                .check-hidden {
+                    background-color: #99E2D0;
+                    height: 100%;
+                    padding: 31px;
+                    overflow: hidden;
+                    transition: all 0.5s ease-out;
+                    position: absolute;
+                    right: -100px;
+                }
+                .check-hidden i {
+                    position: relative;
+                    left: -60px;
+                    transition: all 0.5s ease-out;
+                    color: #fff;
+                    font-size: 25px;
+                }
+                .contenu:hover .check-hidden {
+                    transform: translateX(-100px);
+                }
+                
+                .contenu:hover .price {
+                    transform: translateX(-100px);
+                }
+                
+                .contenu:hover i {
+                    transform: translateX(60px) rotate(380deg);
+                }
+                     
                     
-                    .item-menu:hover{
-                         transition: right 2s;
-                        width:50% ; padding-right: 20px; 
-                        
-                    }
-                    .item-menu::after {
-                        content: '';
-                        display: block;
-                        width: 100px;  height: 130px;
-                        background-color: $tertiaire-vert;
-                        position: absolute; top: 0px; right: -100px;
-                        transition: right .8s;
-
-                       
-                      }
-
-                    .item-menu:hover::after { right: 0px;}
-                    
-                    .check-hidden {
-                        color: black;
-                        overflow: hidden;
-                            
-                        
-                        opacity: 0;
-                        animation-duration: 1s;
-                        
-                        /* width: 100%; */
-                        padding: 15px 20px 18px 9px;
-                    }
-                    .check-hidden:hover{
-                        opacity: 1;
-                        transition: left 2s;
-                      rotate: 0.5 -0.5 2 -90deg;
-                      margin-right: 90px;
-                       
-                   }   
-                        
-                    .check-hidden::after{
-                        content: "";
-                        
-                        
-
-                        color: rgb(244, 241, 241);
-                        position: absolute;
-                        top: 0;
-                        right: -50px;
-                        opacity: 1;
-                        animation-fill-mode: forwards;
-                        animation-delay: 1s;
-                        transition: left .8s;
-                        animation-duration: 0.2s;
-                        rotate:  0.5 -0.5 2 ;
-                        margin-right: 100px;
-                       /* animation: afl;
-                      /*  padding: 15px 90px 18px 9px;
-                        transition: all 3s ease-out;
-                        transition: transform 500ms ease-in-out;
-                        transition: left .8s;
-                        
-                       
-                        z-index: 2;*/
-                            
-                     }
                      .check-hidden::after { right: 0px;}
-                     @keyframes afl{
-                        from{
-                        opacity: 0;
-                        transform: rotatex(90deg);
+
+                     @keyframes afl {
+                        from {
+                            opacity: 0;
+                            transform: rotatex(90deg);
                         }
-                        to{
-                        opacity:1 ;
-                        transform: rotatex(-90deg);
+                        to {
+                            opacity: 1;
+                            transform: rotatex(-90deg);
                         }
-            
                     }
-                     .contenu {
+                    .contenu {
                         width: 100%;
                         display: flex;
                         cursor: pointer;
-                        margin: 0px -1px 2px 27px;
-                        align-items: flex-end;
+                        /* margin: 0px -1px 2px 27px; */
+                        align-items: center;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         justify-content: space-around;
+                        /* padding: 10px; */
+                    }
+                    .contenu h2 {
+                        font-size: 18px;
+                        margin: 0px 9px 8px 2px;
                     }
                     .item-contenu {
                         width: 100%;
@@ -150,9 +129,7 @@
                 
                         margin-right: 100px;
                     }  
-                    span.price:hover {
-                        margin-right: 100px;
-                    }  
+                     
         
         
                     .conteneur{

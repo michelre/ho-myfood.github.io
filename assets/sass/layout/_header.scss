@@ -225,12 +225,7 @@ align-content: stretch;
 margin-top: -18px;
 margin-right: -18px;
 }*/
-.font{
-    
-        margin: -20px -58px -35px 212px;
-    
-    
-}
+
 
 @mixin gradient-animation( $start, $end, $transTime, $content) {
     background-size: 100%;
