@@ -212,18 +212,24 @@ margin-right: 18px;
         
          
 }*/
-.font .visibleSolid .hiddenHoverSolid   {
+/*.font .visibleSolid .hiddenHoverSolid   {
 
     display: flex;
- color:#07060638;
+ color:#766c6c89;
  transition: all 2s ease 0;
  
  
 justify-content: flex-end;
 flex-direction: row;
 align-content: stretch;
-/*margin-top: -18px;
-margin-right: -18px;*/
+margin-top: -18px;
+margin-right: -18px;
+}*/
+.font{
+    
+        margin: -20px -58px -35px 212px;
+    
+    
 }
 
 @mixin gradient-animation( $start, $end, $transTime, $content) {
@@ -256,7 +262,9 @@ margin-right: -18px;*/
 
 
 .hiddenHoverSolid {
-    display: none
+    display: none;
+  
+
 }
 
 .font {
@@ -274,6 +282,7 @@ margin-right: -18px;*/
             @include gradient-animation(purple, pink, 1s, "\f004");
           
             position: relative;
+           
         }
     }
 }

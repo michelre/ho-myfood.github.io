@@ -369,15 +369,21 @@ margin-right: 18px;
 
 
 }*/
-.font .visibleSolid .hiddenHoverSolid {
-  display: flex;
-  color: rgba(7, 6, 6, 0.2196078431);
-  transition: all 2s ease 0;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-content: stretch;
-  /*margin-top: -18px;
-  margin-right: -18px;*/
+/*.font .visibleSolid .hiddenHoverSolid   {
+
+    display: flex;
+ color:#766c6c89;
+ transition: all 2s ease 0;
+
+
+justify-content: flex-end;
+flex-direction: row;
+align-content: stretch;
+margin-top: -18px;
+margin-right: -18px;
+}*/
+.font {
+  margin: -20px -58px -35px 212px;
 }
 
 .hiddenHoverSolid {
