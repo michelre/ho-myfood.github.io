@@ -433,7 +433,6 @@ margin-right: -18px;
   display: flex;
   margin-top: 1px;
   background-color: rgba(243, 241, 241, 0.5);
-  height: 550px;
   width: 100%;
   margin: auto;
   border-radius: 35px 35px 0px 0px;
@@ -632,23 +631,43 @@ h2 {
   color: black;
   overflow: hidden;
   opacity: 0;
-  animation-duration: 0.2s;
-  animation-fill-mode: both;
+  animation-duration: 1s;
   /* width: 100%; */
   padding: 15px 20px 18px 9px;
 }
 
 .check-hidden:hover {
-  color: rgb(248, 243, 243);
-  position: relative;
   opacity: 1;
-  animation-duration: 0.2s;
-  animation: afl;
-  /*  padding: 15px 90px 18px 9px;*/
-  transition: all 3s ease-out;
-  transition: transform 500ms ease-in-out;
+  transition: left 2s;
+  rotate: 0.5 -0.5 2 -90deg;
+  margin-right: 90px;
+}
+
+.check-hidden::after {
+  content: "";
+  color: rgb(244, 241, 241);
+  position: absolute;
+  top: 0;
+  right: -50px;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
   transition: left 0.8s;
-  z-index: 2;
+  animation-duration: 0.2s;
+  rotate: 0.5 -0.5 2;
+  margin-right: 100px;
+  /* animation: afl;
+  /*  padding: 15px 90px 18px 9px;
+    transition: all 3s ease-out;
+    transition: transform 500ms ease-in-out;
+    transition: left .8s;
+
+
+    z-index: 2;*/
+}
+
+.check-hidden::after {
+  right: 0px;
 }
 
 @keyframes afl {
