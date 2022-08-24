@@ -108,7 +108,7 @@ body {
 }
 @font-face {
   font-family: Shrikhand;
-  src: url(assets/fonts/Shrikhand-Regular.otf) format("opentype");
+  src: url(assets/fonts/Shrikhand-Regular.ttf) format("opentype");
 }
 @font-face {
   font-family: roboto;
@@ -672,10 +672,6 @@ height: 170px;
   cursor: pointer;
   /* margin: 0px -1px 2px 27px; */
   align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  justify-content: space-around;
   /* padding: 10px; */
 }
 
@@ -733,12 +729,13 @@ span.price::after {
 .heading {
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h1 {
-  font-family: Shrikhand-Regular;
+  padding: 2px 27px 2px;
+  font-family: "shrikhand-regular";
 }
 
 .section {
@@ -820,7 +817,7 @@ span.h2 {
 
 /*bouton commander*/
 .tchek {
-  margin: 0px 0px 27px 0px;
+  margin: 40px 0px 77px 0px;
   display: flex;
   justify-content: center;
 }
@@ -853,8 +850,12 @@ span.h2 {
   .logo-footer {
     display: flex;
     justify-content: flex-start;
-    margin-top: 5px;
+    margin-top: 0px;
     width: 100%;
+    padding: 20px;
+  }
+  .contenu .item-contenu {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -914,7 +915,7 @@ span.h2 {
   .check-hidden {
     background-color: #99E2D0;
     height: 100%;
-    padding: 22px;
+    padding: 27px;
     overflow: hidden;
     transition: all 0.5s ease-out;
     position: absolute;
@@ -943,9 +944,12 @@ span.h2 {
     margin: 15px 2px 9px 2px;
   }
   span.h2 {
+    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -979,9 +983,12 @@ span.h2 {
     margin: 15px 2px 9px 2px;
   }
   span.h2 {
+    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
+    display: block;
   }
   .d_flex {
     margin: 35px;

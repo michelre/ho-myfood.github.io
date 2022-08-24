@@ -2,9 +2,13 @@
    
     .logo-footer {
         display: flex;
-        justify-content:flex-start;
-        margin-top: 5px;
+        justify-content: flex-start;
+        margin-top: 0px;
         width: 100%;
+        padding: 20px;
+    }
+    .contenu .item-contenu {
+        padding: 10px;
     }
     
 
@@ -74,7 +78,7 @@
     .check-hidden {
         background-color: #99E2D0;
         height: 100%;
-        padding: 22px;
+        padding: 27px;
         overflow: hidden;
         transition: all 0.5s ease-out;
         position: absolute;
@@ -102,10 +106,13 @@
         font-size: 16px;
         margin: 15px 2px 9px 2px;
     }
-    span.h2{
+    span.h2 {
+        width: 150px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin: 0;
+        display: block;
     }
 }
 @media screen and (max-width: 600px){
@@ -140,10 +147,13 @@
         font-size: 16px;
         margin: 15px 2px 9px 2px;
     }
-    span.h2{
+    span.h2 {
+        width: 150px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin: 0;
+        display: block;
     }
     .d_flex {
         margin: 35px;
