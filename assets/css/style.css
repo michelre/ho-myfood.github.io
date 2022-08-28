@@ -27,14 +27,14 @@ body {
 }
 
 .loader-container {
-  position: absolute;
+  position: fixed;
   background: rgba(241, 241, 241, 0.9960784314);
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: loader-container;
+  animation-name: loader;
   animation-iteration-count: 1;
   animation: deplacement 5s;
   opacity: 0;
@@ -109,6 +109,8 @@ body {
 @font-face {
   font-family: Shrikhand;
   src: url(assets/fonts/Shrikhand-Regular.ttf) format("opentype");
+  src: url(assets/fonts/shrikhand-regular-webfont.woff) format("truetype");
+  src: url(assets/fonts/shrikhand-regular-webfont.woff2) format("truetype");
 }
 @font-face {
   font-family: roboto;
@@ -736,6 +738,7 @@ span.price::after {
 h1 {
   padding: 2px 27px 2px;
   font-family: "shrikhand-regular";
+  font-family: "shrihhand-regular";
 }
 
 .section {
@@ -901,10 +904,6 @@ span.h2 {
   .item-menu {
     width: 70%;
   }
-  /*.contenu .price {
-      padding: 32px 3px 23px 20px;
-      transition: all 0.5s ease-out;
-  }*/
   .contenu .item-contenu {
     padding: 10px;
   }
@@ -931,11 +930,6 @@ span.h2 {
   .contenu:hover .price {
     transform: translateX(-59px);
   }
-  /* .section {
-       font-size: 18px;
-       position: absolute; 
-       transform: translate(1px, -29px);
-   }*/
   h2 {
     white-space: nowrap;
     overflow: hidden;
@@ -957,10 +951,6 @@ span.h2 {
     padding-left: 0;
     padding-right: 0;
   }
-  /* .nav_btn {
-       margin: 23px 90px 13px 40px;
-
-   }*/
   .contenu-footer a {
     margin: 26px 5px 10px -10px;
   }
@@ -1012,20 +1002,6 @@ span.h2 {
     width: 100%;
     padding-right: 20px;
   }
-  /*.price{
-      right: 100px;
-     }
-     .item-contenu span.price::after{
-      content: "";
-      position: absolute;
-      right: 100px;
-      transition: right .8s;
-
-      margin-right: 100px;
-  }  
-  span.price:hover {
-      margin-right: 100px;
-  }  */
 }
 /*/*@media container*/
 /*@media screen and (min-width: 576px) {
@@ -1151,9 +1127,6 @@ span.h2 {
   }
   .containeur {
     width: 100%;
-    /* margin: 17px 20px 23px 71px;
-     width: 1048px;
-     border-radius: 35px 35px 35px 35px;*/
   }
   .flex {
     margin: 10px 10px 10px 10px;
@@ -1273,7 +1246,7 @@ span.h2 {
 @media all and (max-width: 500px) {
   .loader-container {
     width: 100%;
-    height: 2000px;
+    height: 100vh;
   }
   .loader-dot {
     display: flex;
@@ -1287,7 +1260,7 @@ span.h2 {
     margin: -25px 10px 10px 6px;
   }
   .containeur {
-    align-items: flex-start;
+    align-items: normal;
   }
   .filtre {
     margin-left: 41px;
@@ -1344,7 +1317,7 @@ span.h2 {
 @media (max-width: 375px) {
   .loader-container {
     width: 100%;
-    height: 2000px;
+    height: 100vh;
   }
   .loader-dot {
     display: flex;
