@@ -606,47 +606,35 @@ main {
   overflow: hidden;
 }
 
-.contenu .item-contenu {
-  padding: 20px;
-}
-
-.contenu .price {
-  padding: 30px 20px 10px 20px;
-  transition: all 0.5s ease-out;
-}
-
 .check-hidden {
   background-color: #99E2D0;
-  height: 100%;
-  padding: 31px;
+  height: 66px;
   overflow: hidden;
   transition: all 0.5s ease-out;
-  position: absolute;
-  right: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  transform: translateX(50px);
 }
 
 .check-hidden i {
   position: relative;
-  left: -60px;
   transition: all 0.5s ease-out;
   color: #fff;
   font-size: 25px;
 }
 
 .contenu:hover .check-hidden {
-  transform: translateX(-100px);
+  transform: translateX(0px);
 }
 
-.contenu:hover .price {
-  transform: translateX(-100px);
+.contenu:hover .item-contenu {
+  width: calc(85% - 50px);
 }
 
 .contenu:hover i {
-  transform: translateX(60px) rotate(380deg);
-}
-
-.check-hidden::after {
-  right: 0px;
+  transform: rotate(380deg);
 }
 
 @keyframes afl {
@@ -675,22 +663,16 @@ main {
 
 .item-contenu {
   width: 85%;
+  padding: 10px;
+  transition: width 0.5s ease;
+  flex-shrink: 0;
 }
 .item-contenu h2 {
   width: 100% !important;
 }
 
 .price {
-  width: 25%;
-  text-align: right;
-}
-
-span.price::after {
-  content: "";
-  position: absolute;
-  right: 100px;
-  transition: right 0.8s;
-  margin-right: 100px;
+  width: 15%;
 }
 
 .conteneur {
@@ -849,11 +831,6 @@ span.h2 {
   align-items: center;
 }
 
-@media screen and (max-width: 1265px) {
-  .contenu .item-contenu {
-    padding: 10px;
-  }
-}
 @media screen and (max-width: 800px) {
   .heading {
     flex-direction: row;
@@ -888,35 +865,6 @@ span.h2 {
     border-radius: 50px 50px 0 0;
     margin: auto;
     width: 100%;
-  }
-  .item-menu {
-    width: 70%;
-  }
-  .contenu .item-contenu {
-    padding: 10px;
-  }
-  .contenu .price {
-    padding: 28px 10px 2px 2px;
-    transition: all 0.5s ease-out;
-  }
-  .check-hidden {
-    background-color: #99E2D0;
-    height: 100%;
-    padding: 27px;
-    overflow: hidden;
-    transition: all 0.5s ease-out;
-    position: absolute;
-    right: -100px;
-  }
-  .check-hidden i {
-    position: relative;
-    left: -64px;
-    transition: all 0.5s ease-out;
-    color: #fff;
-    font-size: 17px;
-  }
-  .contenu:hover .price {
-    transform: translateX(-59px);
   }
   h2 {
     white-space: nowrap;
@@ -971,9 +919,6 @@ span.h2 {
     align-items: flex-start;
     margin: 35px;
   }
-  .contenu:hover .price {
-    transform: translateX(-45px);
-  }
   .item-menu {
     width: 100%;
   }
@@ -983,7 +928,6 @@ span.h2 {
   .item-menu:hover {
     transition: right 2s;
     width: 100%;
-    padding-right: 20px;
   }
 }
 .container {

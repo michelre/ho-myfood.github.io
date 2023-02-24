@@ -53,48 +53,37 @@ main {
   overflow: hidden;
 }
 
-.contenu .item-contenu {
-  padding: 20px;
-}
-
-.contenu .price {
-  padding: 30px 20px 10px 20px;
-  transition: all 0.5s ease-out;
-}
 
 .check-hidden {
   background-color: #99E2D0;
-  height: 100%;
-  padding: 31px;
+  height: 66px;
   overflow: hidden;
   transition: all 0.5s ease-out;
-  position: absolute;
-  right: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  transform: translateX(50px);
 }
 
 .check-hidden i {
   position: relative;
-  left: -60px;
   transition: all 0.5s ease-out;
   color: #fff;
   font-size: 25px;
 }
 
 .contenu:hover .check-hidden {
-  transform: translateX(-100px);
+  transform: translateX(0px);
 }
 
-.contenu:hover .price {
-  transform: translateX(-100px);
+.contenu:hover .item-contenu {
+  width: calc(85% - 50px);
 }
+
 
 .contenu:hover i {
-  transform: translateX(60px) rotate(380deg);
-}
-
-
-.check-hidden::after {
-  right: 0px;
+  transform: rotate(380deg);
 }
 
 @keyframes afl {
@@ -125,6 +114,9 @@ main {
 
 .item-contenu {
   width: 85%;
+  padding: 10px;
+  transition: width .5s ease;
+  flex-shrink: 0;
 
   h2 {
     width: 100% !important;
@@ -132,17 +124,7 @@ main {
 }
 
 .price {
-  width: 25%;
-  text-align: right;
-}
-
-span.price::after {
-  content: "";
-  position: absolute;
-  right: 100px;
-  transition: right .8s;
-
-  margin-right: 100px;
+  width: 15%;
 }
 
 
