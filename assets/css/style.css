@@ -131,7 +131,7 @@ body {
 
 .logo-footer {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 5px;
   margin-right: 5px;
@@ -148,7 +148,7 @@ body {
 
 svg {
   padding: 2px;
-  margin: auto 0px 21px;
+  margin-right: 24px;
 }
 
 path {
@@ -160,40 +160,40 @@ path {
   background-color: #333;
   color: white;
   width: 100%;
+  padding: 20px;
 }
 .contenu-footer i {
   padding: 5px;
   color: white;
 }
 .contenu-footer a {
-  margin: 2px 20px 2px 60px;
-  display: flex;
   color: white;
-  align-items: flex-start;
 }
 
 .listes-services {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  padding: 5px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .listes-services li {
-  padding: 2px 0px;
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .listes-services {
+    flex-wrap: nowrap;
+  }
+  .logo-footer {
+    flex-wrap: nowrap;
+  }
+}
 .header_heading {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /*.img-logo{
-      width: 180px;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-      overflow: hidden;
-      height: 70px;
-
-  }*/
 }
 .header_heading .nav {
   display: flex;
@@ -220,6 +220,7 @@ path {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  width: 100%;
 }
 
 .filtre {
@@ -275,11 +276,14 @@ path {
   flex-direction: column;
   align-items: center;
   background-color: rgba(243, 241, 241, 0.5);
-  height: 268px;
+  padding: 32px 0;
 }
 .nav_container .titre {
   font-size: x-large;
   font-weight: 900;
+}
+.nav_container p {
+  margin: 0;
 }
 
 .btn {
@@ -287,6 +291,9 @@ path {
   flex-direction: row;
   justify-content: center;
   margin: 10px;
+  padding-left: 16px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .btn li {
   cursor: pointer;
@@ -420,6 +427,11 @@ margin-right: -18px;
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .btn {
+    flex-wrap: nowrap;
+  }
+}
 .flex {
   display: flex;
   flex-direction: row;
@@ -446,13 +458,13 @@ margin-right: -18px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
-  width: 271px;
+  width: 100%;
   height: 204px;
   overflow: hidden;
   background-size: cover;
   background-repeat: inherit;
   background-position: center center;
-  margin: 10px;
+  margin: 10px 0;
   position: relative;
 }
 
@@ -471,23 +483,6 @@ a {
   color: black;
 }
 
-.bck-img {
-  width: 124vh;
-  background-repeat: no-repeat;
-  background-position: right 35% bottom 45%;
-  background-size: cover;
-  overflow: hidden;
-  height: 170px;
-  margin: 16px 0px 14px -4px;
-}
-
-.fonction {
-  display: flex;
-  align-items: center;
-  margin: 50px;
-  font-size: 30px;
-}
-
 h2 {
   font-size: 18px;
   margin: 26px 9px 8px 2px;
@@ -496,8 +491,8 @@ h2 {
 .content {
   display: flex;
   flex-direction: row;
-  margin: 15px 12px 11px 25px;
-  align-items: flex-end;
+  padding: 12px;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -526,49 +521,55 @@ h2 {
   font-size: 15px;
 }
 
-/* .fa-regular{
-     position: relative;
-     height: 60px;
-     width: 100px;
-     top: 60px;
- }*/
 .fa-emoji {
   display: flex;
 }
 
-/* .fa-regular::before{
-     content: "";
-     position: absolute;
-     background-color: $btn-degrade;
-     width: 100%;
-     height: 100%;
-     top: 60px;
- }*/
-/* .bck-img{
-        margin: 17px 9px 21px 4px;
-    width: 166vh;
-background-repeat: no-repeat;
-background-position: right 35% bottom 45%;
-background-size: cover;
-overflow: hidden;
-height: 170px;
-    }
-   /* margin: 17px 9px 21px 4px;
-    width: 166vh;*/
-.bck-img {
-  width: 124vh;
-  background-repeat: no-repeat;
-  background-position: right 35% bottom 45%;
-  background-size: cover;
-  overflow: hidden;
-  height: 170px;
-  margin: 16px 0px 14px -4px;
+.fonction {
+  font-size: 26px;
+  font-weight: bolder;
 }
 
+.containeur {
+  padding: 16px;
+}
+
+.fa-heart {
+  font-size: 26px;
+}
+
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: calc(50% - 12px);
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 998px) {
+  .cart {
+    width: calc(25% - 12px);
+    margin-right: 12px;
+  }
+}
 /*header*/
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+}
+.header img {
+  width: 200px;
+  object-fit: contain;
+}
+
+main {
+  position: relative;
+  top: -50px;
 }
 
 /*image container*/
@@ -578,16 +579,6 @@ height: 170px;
   padding-left: 15px;*/
   margin: 0 auto;
   transition: all 0.5s ease-out;
-}
-
-/*image header*/
-.bck-img {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: right 35% bottom 45%;
-  background-size: cover;
-  overflow: hidden;
-  height: 170px;
 }
 
 /*menu a la francaise....la palette...les delices...*/
@@ -683,7 +674,15 @@ height: 170px;
 }
 
 .item-contenu {
-  width: 100%;
+  width: 85%;
+}
+.item-contenu h2 {
+  width: 100% !important;
+}
+
+.price {
+  width: 25%;
+  text-align: right;
 }
 
 span.price::after {
@@ -766,6 +765,7 @@ h1 {
 span.h2 {
   display: flex;
   font-size: 15px;
+  width: 100%;
 }
 
 /*animation carte */
@@ -850,13 +850,6 @@ span.h2 {
 }
 
 @media screen and (max-width: 1265px) {
-  .logo-footer {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0px;
-    width: 100%;
-    padding: 20px;
-  }
   .contenu .item-contenu {
     padding: 10px;
   }
@@ -872,9 +865,7 @@ span.h2 {
     padding-left: 0px;
   }
   .bck-img {
-    position: relative;
-    top: 64px;
-    left: 3px;
+    margin: 0;
     width: 100%;
     background-repeat: no-repeat;
     background-position: right 35% bottom 21%;
@@ -897,9 +888,6 @@ span.h2 {
     border-radius: 50px 50px 0 0;
     margin: auto;
     width: 100%;
-  }
-  .item-contenu {
-    width: 85%;
   }
   .item-menu {
     width: 70%;
@@ -938,7 +926,6 @@ span.h2 {
     margin: 15px 2px 9px 2px;
   }
   span.h2 {
-    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -950,9 +937,6 @@ span.h2 {
   .containt {
     padding-left: 0;
     padding-right: 0;
-  }
-  .contenu-footer a {
-    margin: 26px 5px 10px -10px;
   }
   li {
     font-size: 18px;
@@ -973,7 +957,6 @@ span.h2 {
     margin: 15px 2px 9px 2px;
   }
   span.h2 {
-    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1003,52 +986,6 @@ span.h2 {
     padding-right: 20px;
   }
 }
-/*/*@media container*/
-/*@media screen and (min-width: 576px) {
-    .container-sm,
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .container-md,
-    .container-sm,
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
-        max-width: 1200px;
-
-    }
-}
-
-@media (min-width: 1200px) {
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
-        max-width: 1140px;
-    }
-}*/
-/*@media (min-width: 1500px) {
-    .container-xxl,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
-        max-width: 1320px;
-    }
-}*/
 .container {
   width: 100%;
   padding-right: 15px;
@@ -1062,7 +999,6 @@ span.h2 {
     width: 100%;
   }
   .nav_link-activ-button {
-    width: 90%;
     flex-direction: column;
     align-items: center;
   }
@@ -1076,14 +1012,8 @@ span.h2 {
     flex-direction: column;
     align-items: center;
   }
-  .cart {
-    width: 271px;
-  }
   .h2 {
     font-size: smaller;
-  }
-  span.h2 {
-    margin: 5px 0px 4px 0px;
   }
   .content {
     font-size: 15px;
@@ -1097,10 +1027,6 @@ span.h2 {
   .header_heading {
     justify-content: space-around;
   }
-  .cart {
-    margin: -25px 10px 40px 3px;
-    width: 299px;
-  }
   .flex {
     flex-direction: column;
   }
@@ -1110,21 +1036,11 @@ span.h2 {
   .button {
     font-size: 16px;
   }
-  .image {
-    width: 299px;
-  }
-  .btn {
-    margin: 21px;
-  }
   li.active:hover {
     background-color: rgba(147, 86, 220, 0.2);
   }
 }
 @media all and (max-width: 1260px) {
-  .cart {
-    margin: 16px 1px 9px 21px;
-    /*width: 298px*/
-  }
   .containeur {
     width: 100%;
   }
@@ -1143,18 +1059,11 @@ span.h2 {
   .flex {
     flex-direction: column;
   }
-  .btn {
-    flex-direction: column;
-  }
   .btn li {
     margin: 9px 39px 24px -3px;
   }
-  .cart {
-    margin: 22px 4px 13px 11px;
-  }
   .nav_container {
     width: 100%;
-    height: 300px;
   }
   .nav_container .sous-titre {
     font-size: 18px;
@@ -1217,24 +1126,10 @@ span.h2 {
   .nav {
     background-color: rgba(97, 94, 94, 0.165);
     /*width: 700px;*/
-    height: 90px;
+    padding: 12px 0;
   }
   .text {
     background-color: hsla(0deg, 25%, 10%, 0);
-  }
-  .listes-services {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
-  .contenu-footer a {
-    margin: 0px 2px 2px 14px;
-    color: white;
-    align-items: flex-start;
-  }
-  .logo-footer {
-    flex-direction: column;
-    align-items: center;
   }
   .img-logo {
     margin: 2px 5px 2px 16px;
@@ -1262,26 +1157,13 @@ span.h2 {
   .containeur {
     align-items: normal;
   }
-  .filtre {
-    margin-left: 41px;
-  }
-  .fonction {
-    font-weight: bold;
-  }
   .button {
     font-size: 17px;
     width: 229px;
   }
-  .logo-footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .nav_link-search {
     justify-content: space-between;
     align-items: flex-start;
-  }
-  .nav_container {
-    height: 350px;
   }
   .nav_container .sous-titre {
     text-align: center;
@@ -1300,18 +1182,11 @@ span.h2 {
 }
 @media (max-width: 419px) {
   .btn li {
-    width: 290px;
     margin: 9px 0px 17px 0px;
   }
   .menu-link {
     font-size: 17px;
     margin: 0px 0px 0px 23px;
-  }
-  .fonction {
-    margin: 16px;
-    font-weight: bold;
-    font-size: 25px;
-    text-transform: none;
   }
 }
 @media (max-width: 375px) {
@@ -1327,9 +1202,6 @@ span.h2 {
     justify-content: center;
     align-items: flex-start;
   }
-  .fonction {
-    margin: 16px;
-  }
   .nav_link-search {
     padding: 20px;
     margin-top: 10px;
@@ -1337,7 +1209,6 @@ span.h2 {
     align-items: flex-start;
   }
   .btn li {
-    width: 290px;
     margin: 9px 0px 17px 0px;
   }
   .flex {

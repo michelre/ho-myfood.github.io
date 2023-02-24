@@ -1,78 +1,85 @@
 
-
-
-
-
-
-
-
-.font-awesome{
-    display: flex;
-    gap: 10px;
-    row-gap: 20px;
-    padding: 5px 5px;
-    margin: 20px 10px;
+.font-awesome {
+  display: flex;
+  gap: 10px;
+  row-gap: 20px;
+  padding: 5px 5px;
+  margin: 20px 10px;
 }
 
 
-    
-        .logo-footer{
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5px;
-            margin-right: 5px;
-            }
-        
-        
-        .img-logo{
-            
-            width: 173px;
-            background-size: 100%;
-            
-            
-            background-repeat: no-repeat;
-            background-position: center center;
-            overflow: hidden;
-            height: 53px;
-            
-        }
-        svg {
-            padding: 2px;
-            margin: auto 0px 21px;
-        }
-        path{
-            
-            fill: #fff;
-        }
-   
+.logo-footer {
 
-.contenu-footer{
-    
-    /*flex-shrink: 0;*/
-    background-color: #333;
-    color: #ffff;
-    width: 100%;  
-    i{
-        padding: 5px;
-        color: #ffff;
-    }
-    a{
-        margin: 2px 20px 2px 60px;
-        display: flex;
-        color: #ffff;
-        align-items: flex-start;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 
-.listes-services{
-    display: flex;
-    flex-direction: row;
+.img-logo {
+
+  width: 173px;
+  background-size: 100%;
+
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 53px;
+
+}
+
+svg {
+  padding: 2px;
+  margin-right: 24px;
+}
+
+path {
+
+  fill: #fff;
+}
+
+
+.contenu-footer {
+
+  /*flex-shrink: 0;*/
+  background-color: #333;
+  color: #ffff;
+  width: 100%;
+  padding: 20px;
+
+  i {
     padding: 5px;
+    color: #ffff;
+  }
 
-    li{
-        padding: 2px 0px ;
-    }
+  a {
+    color: white;
+  }
+}
+
+
+.listes-services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  li {
+    width: 100%
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listes-services {
+    flex-wrap: nowrap;
+  }
+
+  .logo-footer {
+    flex-wrap: nowrap;
+  }
 }
