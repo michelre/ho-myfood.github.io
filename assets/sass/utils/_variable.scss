@@ -1,35 +1,26 @@
 //principal
 
 
-$primaire-mauve :#9356DC;
-$secondaire-rose:#FF79DA;
-$tertiaire-vert:#99E2D0;
-$secondaire-rose-clair:#f25cc892;
-$primaire-mauve-opacité:#9256dce5;
-$primaire-mauve-clair :#9256dcaa;
-
+$primaire-mauve: #9356DC;
+$secondaire-rose: #FF79DA;
+$tertiaire-vert: #99E2D0;
+$secondaire-rose-clair: #f25cc892;
+$primaire-mauve-opacité: #9256dce5;
+$primaire-mauve-clair: #9256dcaa;
 
 
 //boutton
-$btn-degrade:linear-gradient(
-    to bottom right, $secondaire-rose,$primaire-mauve,
+$btn-degrade: linear-gradient(
+  to bottom right, $secondaire-rose, $primaire-mauve,
 );
-
 
 
 //fond
 
 
-
 //textes
 $corlor-typo: #333;
-$color-btn:#ffff
-
-
-
-
-//utilitaire/position/dimension
-
+$color-btn: #ffff//utilitaire/position/dimension
 
 
 

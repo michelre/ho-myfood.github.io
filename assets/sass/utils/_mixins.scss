@@ -1,19 +1,21 @@
-@mixin absolute-el ($top, $right, $bottom, $left, $x, $y){
-    position: absolute;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-    transform: translate($x,$y);
+@mixin absolute-el($top, $right, $bottom, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  transform: translate($x, $y);
 
 }
+
 @mixin logo {
-    
+
 }
+
 @mixin gradient-animation( $start, $end, $transTime, $content ) {
-   position: relative;
-   
-    }
+  position: relative;
+
+}
     
   
   

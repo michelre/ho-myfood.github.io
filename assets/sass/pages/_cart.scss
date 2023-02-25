@@ -1,221 +1,222 @@
 /*header*/
-.header{
-    display: flex;
-    flex-direction: column;
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+
+  img {
+    width: 200px;
+    object-fit: contain;
+  }
 }
+
+main {
+  position: relative;
+  top: -50px;
+}
+
 /*image container*/
-.containt
-	 {
-        width: 100%;
-        /*padding-right: 15px;
-        padding-left: 15px;*/
-        margin: 0 auto;
-	    transition: all 0.5s ease-out;
-	}
-/*image header*/
-        .bck-img{
-			width: 100%;
-			background-repeat: no-repeat;
-			background-position: right 35% bottom 45%;
-			background-size: cover;
-            overflow: hidden;
-            height: 170px;
-   
-		}
+.containt {
+  width: 100%;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin: 0 auto;
+  transition: all 0.5s ease-out;
+}
 
-        /*menu a la francaise....la palette...les delices...*/
-		.menu{
-           
-            display: flex;
-            margin: 7px 0px 32px 0px;
-            
-            flex-direction: column;
-            align-items: center;
-            opacity: 0;
-            transform: translatey(-30px);
-            animation: apparition 1.5s ease-out forwards;
-            
-            }
-                .item-menu{
-                    display: inline-block;
-                    background-color:#ffff;
-                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-                    border-radius: 10px 10px 10px 10px;
-                    width: 50%;
-                    height: auto;
-                    margin-block: 5px;
-                    transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
-                    transition-duration: .5s; 
-                    position: relative;
-                    overflow: hidden;
-                
-                
-                }
-                .contenu .item-contenu {
-                    padding: 20px;
-                }
-                
-                .contenu .price {
-                    padding: 30px 20px 10px 20px;
-                    transition: all 0.5s ease-out;
-                }
 
-                .check-hidden {
-                    background-color: #99E2D0;
-                    height: 100%;
-                    padding: 31px;
-                    overflow: hidden;
-                    transition: all 0.5s ease-out;
-                    position: absolute;
-                    right: -100px;
-                }
-                .check-hidden i {
-                    position: relative;
-                    left: -60px;
-                    transition: all 0.5s ease-out;
-                    color: #fff;
-                    font-size: 25px;
-                }
-                .contenu:hover .check-hidden {
-                    transform: translateX(-100px);
-                }
-                
-                .contenu:hover .price {
-                    transform: translateX(-100px);
-                }
-                
-                .contenu:hover i {
-                    transform: translateX(60px) rotate(380deg);
-                }
-                     
-                    
-                     .check-hidden::after { right: 0px;}
+/*menu a la francaise....la palette...les delices...*/
+.menu {
 
-                     @keyframes afl {
-                        from {
-                            opacity: 0;
-                            transform: rotatex(90deg);
-                        }
-                        to {
-                            opacity: 1;
-                            transform: rotatex(-90deg);
-                        }
-                    }
-                    .contenu {
-                        width: 100%;
-                        display: flex;
-                        cursor: pointer;
-                        /* margin: 0px -1px 2px 27px; */
-                        align-items: center;
-                        
-                        /* padding: 10px; */
-                    }
-                    .contenu h2 {
-                        font-size: 18px;
-                        margin: 0px 9px 8px 2px;
-                    }
-                    .item-contenu {
-                        width: 100%;
-                       
-                    }
-                    span.price::after{
-                        content: "";
-                        position: absolute;
-                        right: 100px;
-                        transition: right .8s;
-                
-                        margin-right: 100px;
-                    }  
-                     
-        
-        
-                    .conteneur{
-       
-                        display: flex;
-                        flex-direction: column;
-                        background-color: rgba(243, 241, 241, 0.5);
-                        margin: auto;
-                        width: 100%;
-                    }
-                    
-                    
-                    .d-content{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 10px 10px 51px 10px;
-                    opacity: 0;
-                     transform: translatey(-40px);
-                     animation: apparition 0.9s 0.9s ease-out forwards;
-                    }
-                    .d_flex{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center; 
-                        opacity: 0;
-                    transform: translatey(-50px);
-                    animation: apparition 0.9s 1.5s ease-out forwards; 
-                    }
-                 .item-section{
-                    opacity: 0;
-                    transform: translatey(-30px);
-                    animation: apparition 0.9s 0.3s ease-out forwards; 
-                 }  
-                 
-                    
-                
-                /*---h1 menu a la francaise*/
-                .heading {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: row;
-                    justify-content: center;
-                }
+  display: flex;
+  margin: 7px 0px 32px 0px;
 
-	
-                h1{
-                    padding: 2px 27px 2px;
-                    font-family:'shrikhand-regular';
-                    font-family: 'shrihhand-regular';
-                    
-                }	
-	
-   
-                
-                .section{
-                   /* position: absolute;*/
-                    display: inline;
-                    text-transform: uppercase;
-                    left: 4%;
-                   /* margin: 65px 10px 20px -37px;*/
-                   padding: 80px 10px 10px 5px;
-                       font-size: 25px;
-                    transform: translate(1px, -29px);
-        
-        
-                }
-              
-                .section::after{
-                    content: "";
-                    position: absolute;
-                    display: block;
-                    width: 50%;
-                    margin: 1px,auto;
-                    background-color: $tertiaire-vert;
-                    height: 3px;
-                    
-                }
-                /* h2 intitulé de la carte*/
-                 span.h2{
-                    display: flex;
-                    font-size: 15px;
-                }
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translatey(-30px);
+  animation: apparition 1.5s ease-out forwards;
 
-                /*animation carte */
-	            @keyframes apparition{
-		            100%{
-			        opacity: 1;
-			        transform: none;
-		            }
-        
-	            }
+}
+
+.item-menu {
+  display: inline-block;
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  width: 50%;
+  height: auto;
+  margin-block: 5px;
+  transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
+  transition-duration: .5s;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.check-hidden {
+  background-color: #99E2D0;
+  height: 66px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  transform: translateX(50px);
+}
+
+.check-hidden i {
+  position: relative;
+  transition: all 0.5s ease-out;
+  color: #fff;
+  font-size: 25px;
+}
+
+.contenu:hover .check-hidden {
+  transform: translateX(0px);
+}
+
+.contenu:hover .item-contenu {
+  width: calc(85% - 50px);
+}
+
+
+.contenu:hover i {
+  transform: rotate(380deg);
+}
+
+@keyframes afl {
+  from {
+    opacity: 0;
+    transform: rotatex(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotatex(-90deg);
+  }
+}
+
+.contenu {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  /* margin: 0px -1px 2px 27px; */
+  align-items: center;
+
+  /* padding: 10px; */
+}
+
+.contenu h2 {
+  font-size: 18px;
+  margin: 0px 9px 8px 2px;
+}
+
+.item-contenu {
+  width: 85%;
+  padding: 10px;
+  transition: width .5s ease;
+  flex-shrink: 0;
+
+  h2 {
+    width: 100% !important;
+  }
+}
+
+.price {
+  width: 15%;
+}
+
+
+.conteneur {
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(243, 241, 241, 0.5);
+  margin: auto;
+  width: 100%;
+}
+
+
+.d-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px 51px 10px;
+  opacity: 0;
+  transform: translatey(-40px);
+  animation: apparition 0.9s 0.9s ease-out forwards;
+}
+
+.d_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: apparition 0.9s 1.5s ease-out forwards;
+}
+
+.item-section {
+  opacity: 0;
+  transform: translatey(-30px);
+  animation: apparition 0.9s 0.3s ease-out forwards;
+}
+
+
+/*---h1 menu a la francaise*/
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+h1 {
+  padding: 2px 27px 2px;
+  font-family: 'shrikhand-regular';
+  font-family: 'shrihhand-regular';
+
+}
+
+
+.section {
+  /* position: absolute;*/
+  display: inline;
+  text-transform: uppercase;
+  left: 4%;
+  /* margin: 65px 10px 20px -37px;*/
+  padding: 80px 10px 10px 5px;
+  font-size: 25px;
+  transform: translate(1px, -29px);
+
+
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  margin: 1px, auto;
+  background-color: $tertiaire-vert;
+  height: 3px;
+
+}
+
+/* h2 intitulé de la carte*/
+span.h2 {
+  display: flex;
+  font-size: 15px;
+  width: 100%;
+}
+
+/*animation carte */
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+
+}

@@ -250,7 +250,7 @@ path {
   margin-right: -4px;
   border: 0px;
   background-color: hsla(0deg, 25%, 10%, 0.04);
-  box-shadow: rgba(152, 151, 151, 0.186);
+  box-shadow: rgba(5px 19px 2px #000000) ;
   padding-left: 20px;
   padding-right: 20px;
   display: inline-block;
@@ -757,7 +757,7 @@ h1 {
   position: absolute;
   display: block;
   width: 50%;
-  margin: 1px, auto;
+  margin: 1px auto;
   background-color: #99E2D0;
   height: 3px;
 }
@@ -1348,7 +1348,7 @@ span.h2 {
     margin-right: -74px;
     border: 0px;
     padding-left: 7px;
-    padding-right: -8px;
+    
     left: -4px;
   }
 }
