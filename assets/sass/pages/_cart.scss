@@ -1,8 +1,17 @@
 /*header*/
 .header {
   display: flex;
+  background: white;
   justify-content: center;
+  align-items: center;
   padding: 12px 0;
+  position: relative;
+
+  > a {
+    position: absolute;
+    left: 0;
+  }
+
 
   img {
     width: 200px;
@@ -10,7 +19,14 @@
   }
 }
 
-main {
+.press {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-menu {
+  border-radius: 35px 35px 0 0;
+  background-color: rgb(243, 241, 241);
   position: relative;
   top: -50px;
 }
@@ -22,29 +38,37 @@ main {
   padding-left: 15px;*/
   margin: 0 auto;
   transition: all 0.5s ease-out;
+
+  img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
 }
 
 
 /*menu a la francaise....la palette...les delices...*/
 .menu {
-
-  display: flex;
+  width: 100%;
   margin: 7px 0px 32px 0px;
-
-  flex-direction: column;
-  align-items: center;
   opacity: 0;
   transform: translatey(-30px);
   animation: apparition 1.5s ease-out forwards;
 
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
 }
 
 .item-menu {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: #ffff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 10px 10px;
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-block: 5px;
   transition-property: background-color, border-color, border-left-width, padding, width, letter-spacing, font-size;
@@ -56,7 +80,7 @@ main {
 
 .check-hidden {
   background-color: #99E2D0;
-  height: 66px;
+  height: 72px;
   overflow: hidden;
   transition: all 0.5s ease-out;
   display: flex;
@@ -73,16 +97,16 @@ main {
   font-size: 25px;
 }
 
-.contenu:hover .check-hidden {
+.item-menu:hover .check-hidden {
   transform: translateX(0px);
 }
 
-.contenu:hover .item-contenu {
+.item-menu:hover .item-contenu {
   width: calc(85% - 50px);
 }
 
 
-.contenu:hover i {
+.item-menu:hover i {
   transform: rotate(380deg);
 }
 
@@ -117,14 +141,22 @@ main {
   padding: 10px;
   transition: width .5s ease;
   flex-shrink: 0;
+  white-space: nowrap;
 
-  h2 {
-    width: 100% !important;
+  h3, span {
+    margin: 4px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: block;
   }
 }
 
 .price {
+  margin-top: auto;
+  padding: 10px;
   width: 15%;
+  text-align: right;
 }
 
 
@@ -169,12 +201,11 @@ main {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 
 h1 {
-  padding: 2px 27px 2px;
   font-family: 'shrikhand-regular';
   font-family: 'shrihhand-regular';
 
@@ -182,34 +213,24 @@ h1 {
 
 
 .section {
-  /* position: absolute;*/
   display: inline;
   text-transform: uppercase;
-  left: 4%;
-  /* margin: 65px 10px 20px -37px;*/
-  padding: 80px 10px 10px 5px;
   font-size: 25px;
-  transform: translate(1px, -29px);
-
-
+  font-weight: 100;
 }
 
 .section::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50%;
-  margin: 1px, auto;
+  width: 75px;
   background-color: $tertiaire-vert;
   height: 3px;
 
 }
 
-/* h2 intitulé de la carte*/
-span.h2 {
-  display: flex;
-  font-size: 15px;
-  width: 100%;
+.body-menu {
+  background: rgb(243, 241, 241);
 }
 
 /*animation carte */
@@ -219,4 +240,12 @@ span.h2 {
     transform: none;
   }
 
+}
+
+@media screen and (min-width: 768px) {
+
+  .menu {
+    width: calc(50% - 12px);
+    margin-right: 12px;
+  }
 }

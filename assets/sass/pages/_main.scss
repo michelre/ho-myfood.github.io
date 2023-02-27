@@ -1,18 +1,17 @@
 /*---menu la francaise fleche retour menu*/
 .class-fa {
 	padding: 1px;
-	margin-top: 19px;
 	text-align: center;
 	cursor: pointer;
 	transition: 0.5s;
 	color: black;
+	background: white;
   
 	border-radius: 17px;
 	height: 35px;
 	width: 64px;
 	border: none;
 	font-size: 28px;
-	margin: 20px 30px 3px -26px;
   }
   
   .nav-logo {
@@ -30,7 +29,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: -10px;
   }
   
   /*---logo*/
@@ -82,4 +80,9 @@
 	  display: flex;
 	  align-items: center;
 	}
+  }
+  
+  .restaurants {
+	background-color: rgba(243, 241, 241, 0.5);
+	padding: 16px;
   }
