@@ -1,14 +1,16 @@
 .header_heading {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
 
 
   .nav {
 
     display: flex;
-    align-items: center
-
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: hsla(0, 25%, 10%, 0.040);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
 
   .img-logo-head {
@@ -21,6 +23,14 @@
 
   }
 
+  .logo-header {
+    margin: auto;
+    padding: 16px 0;
+  }
+
+  .logo-header img {
+    width: 200px;
+  }
 
 }
 
@@ -29,7 +39,6 @@
   flex-direction: row;
   margin-top: 10px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .nav_link-activ-button {
@@ -64,32 +73,20 @@
 .text {
   font-size: large;
   color: $corlor-typo;
-  flex-direction: row;
-  height: 33px;
-  padding: 1px;
-  margin-right: -4px;
-  border: 0px;
-  background-color: hsla(0, 25%, 10%, 0.040);
-  box-shadow: rgba(152, 151, 151, 0.186);
-  padding-left: 20px;
-  padding-right: 20px;
-  display: inline-block;
-  position: relative;
-  left: -4px;
-
+  display: block;
+  width: 50%;
+  padding: 16px 0;
+  background: transparent;
+  border: none;
+  text-align: center;
 
 }
 
 .form {
   display: flex;
-  flex-direction: row;
   align-items: center;
-
-
-  .recherche-emoticon {
-    margin: 0px 15px 0 0;
-
-  }
+  justify-content: center;
+  width: 100%;
 
   .font.fa-solid:hover {
     color: $btn-degrade;
@@ -102,7 +99,8 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(243, 241, 241, 0.500);
-  padding: 32px 0;
+  padding: 32px;
+  text-align: center;
 
   .titre {
     font-size: x-large;
@@ -110,7 +108,7 @@
   }
 
   p {
-    margin: 0;
+    margin: 8px 0;
   }
 
 
@@ -120,8 +118,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px;
-  padding-left: 16px;
+  padding: 0 0 0 16px;
   width: 100%;
   flex-wrap: wrap;
 
@@ -130,14 +127,13 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 100%;
     height: 60px;
-    margin: 10px 40px 10px 1px;
+    margin: 10px 0;
     border-radius: 16px;
     box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 0 95px 0 35px;
     background-color: rgba(243, 241, 241, 0.500);
     transition: all 0.3s;
   }
@@ -175,7 +171,7 @@ li.btn-item:hover {
 
 }
 
-li span {
+.btn-item span {
   color: white;
   position: absolute;
   top: 1rem;
@@ -192,48 +188,6 @@ li span {
 .btn i:hover {
   color: rgb(146 86 220 / 91%);
 }
-
-/*.font .fa-solid{
-    display: flex;
- color:#505050;
- transition: all 2s ease 0;
- 
- 
-justify-content: flex-end;
-flex-direction: row;
-align-content: stretch;
- margin-top: -18px;
-margin-right: 18px;
-}*/
-
-/*.font .fa-solid:hover {
-    cursor: pointer;
-    /*transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: all 0.5s ease-out;
-  
-        background: -webkit-gradient(linear, left top, left bottom, from($primaire-mauve), to(
-            $secondaire-rose
-        ));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    
-   
-        
-         
-}*/
-/*.font .visibleSolid .hiddenHoverSolid   {
-
-    display: flex;
- color:#766c6c89;
- transition: all 2s ease 0;
- 
- 
-justify-content: flex-end;
-flex-direction: row;
-align-content: stretch;
-margin-top: -18px;
-margin-right: -18px;
-}*/
 
 
 @mixin gradient-animation( $start, $end, $transTime, $content) {
@@ -291,8 +245,21 @@ margin-right: -18px;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .btn {
     flex-wrap: nowrap;
+
+    .btn-item:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  .header_heading {
+    flex-wrap: nowrap;
+  }
+
+  .header_heading .nav {
+    width: 40%;
+    box-shadow: none;
   }
 }
