@@ -158,7 +158,7 @@ path {
   background-color: #333;
   color: white;
   width: 100%;
-  padding: 20px;
+  padding: 45px;
 }
 .contenu-footer i {
   padding: 5px;
@@ -197,7 +197,7 @@ path {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: hsla(0deg, 25%, 10%, 0.04);
+  background-color: #eaeaea;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .header_heading .img-logo-head {
@@ -274,7 +274,7 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(243, 241, 241, 0.5);
+  background-color: #f7f7f7;
   padding: 32px;
   text-align: center;
 }
@@ -310,7 +310,7 @@ path {
 }
 .btn i {
   color: rgba(14, 14, 14, 0.5803921569);
-  padding: 8px 5px 11px 17px;
+  padding: 0px 20px 0px 27px;
 }
 .btn .familial {
   margin: 5px 19px 5px 19px;
@@ -714,6 +714,7 @@ h2 {
 }
 
 h1 {
+  font-style: italic;
   font-family: "shrikhand-regular";
   font-family: "shrihhand-regular";
 }
@@ -761,7 +762,7 @@ h1 {
   background: white;
   border-radius: 17px;
   height: 35px;
-  width: 64px;
+  width: 55px;
   border: none;
   font-size: 28px;
 }
